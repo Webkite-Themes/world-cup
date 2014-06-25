@@ -1,0 +1,386 @@
+$colorVariant:light;
+
+//CALL UNIVERSALS
+@import 'universals';
+
+/* RESET */
+#webkite-results{
+  @include resetThings;
+  }
+
+/****************************************** BEGIN STYLES */
+#webkite-results{
+  @include boxedUp;
+  max-width:700px;
+  margin:0 auto;
+  background:none;
+  border:none;
+  padding:0 $mainGutter/2;
+  #webkite-results-inner{
+    @include roundedUp(4px);
+    @include boxedUp;
+    background: $backgroundColor;
+    border: 1px solid $lighterOpacity;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: $mainGutter/2;
+    font: 400 14px/normal "Open Sans";
+    }
+  a{color:$linkColor;
+      text-decoration: none; 
+    &:hover{color: $linkHover;}
+    }
+  &.webkite-fade-out img{opacity: .5;}
+  }
+  
+/* TYPOGRAPHY */
+#webkite-results{
+  h1, h2{
+    margin: 0;
+    }
+  h2{
+    @include hyphenGreat;
+    display: inline-block;
+    font: 700 1.5em/1 "Open Sans";
+    color: $medOpacity;
+    }
+  p, li{
+    color: $lightOpacity;
+    }
+  }
+
+//*******************************************UNIVERSALS
+@include universalStyles;
+  
+/********************************************** GENERAL */
+#webkite-results{
+  .webkite-results-header{
+    @include boxedUp;
+    line-height: 1;
+    color:$medOpacity;
+    min-height:34px;
+    margin-top:-$mainGutter/2;
+    margin-left:-$mainGutter/2;
+    margin-right:-$mainGutter/2;
+    margin-bottom:0;
+    padding:$mainGutter/2;
+    position:relative;
+    .webkite-match-info{
+      @include boxedUp;
+      display:inline-block;
+      width:70%;
+      padding-right:$mainGutter;
+      vertical-align:top;
+      > span{
+        font-weight:800;
+        text-transform:uppercase;
+        font-style:italic;
+        }
+      }
+    .webkite-embed-link{
+      @include boxedUp;
+      display:inline-block;
+      width:30%;
+      text-align:right;
+      }
+    .webkite-embed-wrapper{
+      @include roundedUp(4px 4px 0 0);
+      background:$backgroundColor;
+      font-size:13px;
+      position:absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      padding:$mainGutter/2;
+      z-index:1;
+      .webkite-embed-input{
+        padding:0 $mainGutter 0 $mainGutter*3.5;
+        input{
+          @include roundedUp(2px);
+          @include boxedUp;
+          color:$medOpacity;
+          border:1px solid $lighterOpacity;
+          padding:2px;
+          outline:none;
+          font-size:10px;
+          position:relative;
+          width:100%;
+          top:-2px;
+          }
+        }
+      .webkite-embed-select{
+        @include boxedUp;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        width:$mainGutter*4;
+        text-align:left;
+        padding:$mainGutter/2;
+        white-space:nowrap;
+        }
+      .webkite-embed-close{
+        @include boxedUp;
+        position:absolute;
+        top:0;
+        right:0;
+        height:34px;
+        width:$mainGutter*1.5;
+        padding:$mainGutter/2;
+        text-indent:-99999px;
+        background:url('select-close.png') no-repeat center center;
+        }
+      }  
+    }
+  .webkite-results-footer{
+    font-size:14px;
+    position:relative;
+    min-height:34px;
+    .webkite-branding-area a {
+      @if $colorVariant == light{background: url("branding-light.svg") center top no-repeat;}
+      @if $colorVariant == dark{background: url("branding-dark.svg") center top no-repeat;}
+      background-size:100%;
+      display: inline-block;
+      height: 34px;
+      width: 102px;
+      position:absolute;
+      bottom:0;
+      left:0;
+      }
+    .webkite-up-next{
+      padding-left:122px;
+      color:$medOpacity;
+      line-height:1;
+      > span {font-size:12px;}
+      span{color:$lightOpacity;}
+      .webkite-next-match{
+        margin-top:$mainGutter/2.5;
+        span{font-style:italic;}
+        }
+      }
+    }
+    .webkite-hide{display:none;}
+    .webkite-show{display:block;}
+  }
+  
+/************************************ MATCH */
+#webkite-results{
+  .webkite-match-wrapper{
+    display:block;
+    width:auto;
+    margin-left:-$mainGutter;
+    margin-right:-$mainGutter;
+    }
+  .webkite-team {
+    @include roundedUp(4px);
+    display:block;
+    height:80px;
+    width:100%;
+    background: #fff;
+    color:$medOpacity;
+    border: 1px solid $lighterOpacity;
+    margin-bottom:$mainGutter;
+    text-align:left;
+    position:relative;
+    -moz-box-shadow:0 2px 4px rgba(0,0,0,0.05);
+    -webkit-box-shadow:0 2px 4px rgba(0,0,0,0.05);
+    box-shadow:0 2px 4px rgba(0,0,0,0.05);
+    &.webkite-team-away {
+      margin-top:20px;
+      }
+    .webkite-team-name,
+    .webkite-team-score{
+      @include boxedUp;
+      display:inline-block;
+      padding-right:$mainGutter;
+      vertical-align:top;
+      }
+    .webkite-team-image-wrapper{
+      @include roundedUp(4px 0 0 4px);
+      position:absolute;
+      top:0;
+      left:0;
+      width:80px;
+      height:80px;
+      padding-right:$mainGutter;
+      .webkite-team-image{
+        @include roundedUp(4px 0 0 4px);
+        background-size:cover;
+        background-position:center center;
+        display:block;
+        height:0;
+        padding-top:100%;
+        width:100%;
+        }
+      }
+    .webkite-team-body{
+      @include boxedUp;
+      width:100%;
+      display:inline-block;
+      padding-left:100px;
+      padding-right:0;
+      vertical-align:top;
+      }
+    .webkite-team-name{
+      @include boxedUp;
+      width:80%;
+      white-space:nowrap;
+      font-size:28px;
+      line-height:37px;
+      text-transform:uppercase;
+      padding-top:$mainGutter;
+      }
+    .webkite-team-score{
+      @include boxedUp;
+      width:20%;
+      text-align:right;
+      white-space:nowrap;
+      font-size:64px;
+      line-height:37px;
+      padding-top:$mainGutter;
+      }
+    }
+    .webkite-versus{
+      @include boxedUp;
+      display:block;
+      margin:-$mainGutter 0;
+      padding:0 $mainGutter;
+      text-align:center;
+      font-size:36px;
+      font-weight:900;
+      font-style:italic;
+      line-height:34px;
+      height:40px;
+      color:$medOpacity;
+      position:relative;
+      span{
+        padding:0 $mainGutter/2;
+        display:inline-block;
+        height:40px;
+        position:relative;
+        i{position:relative;}
+        &:before{
+          background:$backgroundColor;
+          content:"";
+          position:absolute;
+          height:4px;
+          left:0;
+          right:0;
+          top:50%;
+          margin-top:-2px;
+          }
+        }
+      &:before{
+        border-top:1px solid $lighterOpacity;
+        content:"";
+        position:absolute;
+        top:50%;
+        left:$mainGutter;
+        right:$mainGutter;
+        }
+      }
+    
+  }
+  
+/****** FLAG IMAGES */
+#webkite-results{
+  .webkite-team-image{
+    &.webkite-Algeria{background-image:url("Algeria.png");}
+    &.webkite-Argentina{background-image:url("Argentina.png");}
+    &.webkite-Australia{background-image:url("Australia.png");}
+    &.webkite-Belgium{background-image:url("Belgium.png");}
+    &.webkite-Bosnia-Herzegovina{background-image:url("Bosnia-Herzegovina.png");}
+    &.webkite-Brazil{background-image:url("Brazil.png");}
+    &.webkite-C-te-d-Ivoire{background-image:url("C-te-d-Ivoire.png");}
+    &.webkite-Cameroon{background-image:url("Cameroon.png");}
+    &.webkite-Chile{background-image:url("Chile.png");}
+    &.webkite-Colombia{background-image:url("Colombia.png");}
+    &.webkite-Costa-Rica{background-image:url("Costa-Rica.png");}
+    &.webkite-Croatia{background-image:url("Croatia.png");}
+    &.webkite-Ecuador{background-image:url("Ecuador.png");}
+    &.webkite-England{background-image:url("England.png");}
+    &.webkite-France{background-image:url("France.png");}
+    &.webkite-Germany{background-image:url("Germany.png");}
+    &.webkite-Ghana{background-image:url("Ghana.png");}
+    &.webkite-Greece{background-image:url("Greece.png");}
+    &.webkite-Honduras{background-image:url("Honduras.png");}
+    &.webkite-Iran{background-image:url("Iran.png");}
+    &.webkite-Italy{background-image:url("Italy.png");}
+    &.webkite-Japan{background-image:url("Japan.png");}
+    &.webkite-Korea-Republic{background-image:url("Korea-Republic.png");}
+    &.webkite-Mexico{background-image:url("Mexico.png");}
+    &.webkite-Netherlands{background-image:url("Netherlands.png");}
+    &.webkite-Nigeria{background-image:url("Nigeria.png");}
+    &.webkite-Portugal{background-image:url("Portugal.png");}
+    &.webkite-Russia{background-image:url("Russia.png");}
+    &.webkite-Spain{background-image:url("Spain.png");}
+    &.webkite-Switzerland{background-image:url("Switzerland.png");}
+    &.webkite-United-States{background-image:url("United-States.png");}
+    &.webkite-Uruguay{background-image:url("Uruguay.png");}
+    &.webkite-placeholder{background-image:url("TBD.png");}
+  }
+}
+  
+
+/******************************************* NO RESULTS */
+#webkite-results{
+  
+  .webkite-no-results{
+    padding: $mainGutter 0;
+    margin-bottom: $mainGutter;
+    border-bottom: 1px solid $lightestOpacity;
+    h2{
+      margin-bottom: $mainGutter;
+      }
+    }
+
+  }
+  
+/************************************** ELEMENT QUERIES */
+#webkite-results.xs{
+  .webkite-team {
+    height:50px;
+    .webkite-team-image-wrapper{
+      width:50px;
+      height:50px;
+      }
+    .webkite-team-body{
+      padding-left:60px;
+      }
+    .webkite-team-name{width:75%;}
+    .webkite-team-score{width:25%;}
+    .webkite-team-name{
+      font-size:15px;
+      line-height:7px;
+      }
+    .webkite-team-score{
+      font-size:30px;
+      line-height:7px;
+      }
+    }
+    .webkite-versus{font-size:28px;}
+  }
+  
+#webkite-results.sm{
+  .webkite-team {
+    height:75px;
+    .webkite-team-image-wrapper{
+      width:75px;
+      height:75px;
+      }
+    .webkite-team-body{
+      padding-left:95px;
+      }
+    .webkite-team-name{width:75%;}
+    .webkite-team-score{width:25%;}
+    .webkite-team-name{
+      font-size:24px;
+      line-height:32px;
+      }
+    .webkite-team-score{
+      font-size:60px;
+      line-height:32px;
+      }
+    }
+  }

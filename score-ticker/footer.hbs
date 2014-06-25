@@ -1,0 +1,27 @@
+<footer class="webkite-results-footer">
+  <div class="webkite-branding-area"><a href="http://webkite.com/world-cup" target="_blank"></a></div>
+  <div class="webkite-up-next">
+    {{#if items.length}}
+      {{#with items.[0]}}
+        {{#facet name="Status"}}
+          {{#if (equals displayValue "In-progress")}}
+            <span>Up Next</span>
+          {{else}}
+            <span>Upcoming</span>
+          {{/if}}
+        {{/facet}}
+      {{/with}}
+    {{/if}}
+    <div class="webkite-next-match">
+      {{#if items.[1]}}
+        {{#with items.[1]}}
+          {{#facet name="Home Team"}}{{displayValue}}{{/facet}}
+          <span>vs</span> 
+          {{#facet name="Away Team"}}{{displayValue}}{{/facet}}
+        {{/with}}
+      {{else}}
+        Match TBD
+      {{/if}}
+    </div>
+  </div>
+</footer>

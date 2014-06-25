@@ -1,0 +1,456 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,800,800italic");
+/* RESET */
+#webkite-results {
+  /* HTML5 display-role reset for older browsers */ }
+  #webkite-results div, #webkite-results span, #webkite-results applet, #webkite-results object, #webkite-results iframe, #webkite-results h1, #webkite-results h2, #webkite-results h3, #webkite-results h4, #webkite-results h5, #webkite-results h6, #webkite-results p, #webkite-results blockquote, #webkite-results pre, #webkite-results a, #webkite-results abbr, #webkite-results acronym, #webkite-results address, #webkite-results big, #webkite-results cite, #webkite-results code, #webkite-results del, #webkite-results dfn, #webkite-results em, #webkite-results img, #webkite-results ins, #webkite-results kbd, #webkite-results q, #webkite-results s, #webkite-results samp, #webkite-results small, #webkite-results strike, #webkite-results strong, #webkite-results sub, #webkite-results sup, #webkite-results tt, #webkite-results var, #webkite-results b, #webkite-results u, #webkite-results i, #webkite-results center, #webkite-results dl, #webkite-results dt, #webkite-results dd, #webkite-results ol, #webkite-results ul, #webkite-results li, #webkite-results fieldset, #webkite-results form, #webkite-results label, #webkite-results legend, #webkite-results table, #webkite-results caption, #webkite-results tbody, #webkite-results tfoot, #webkite-results thead, #webkite-results tr, #webkite-results th, #webkite-results td, #webkite-results article, #webkite-results aside, #webkite-results canvas, #webkite-results details, #webkite-results embed, #webkite-results figure, #webkite-results figcaption, #webkite-results footer, #webkite-results header, #webkite-results hgroup, #webkite-results menu, #webkite-results nav, #webkite-results output, #webkite-results ruby, #webkite-results section, #webkite-results summary, #webkite-results time, #webkite-results mark, #webkite-results audio, #webkite-results video {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    word-wrap: normal;
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    text-transform: none;
+    vertical-align: baseline;
+    text-rendering: auto; }
+  #webkite-results button, #webkite-results select, #webkite-results input {
+    text-transform: none; }
+    #webkite-results button:active, #webkite-results select:active, #webkite-results input:active {
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  #webkite-results button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  #webkite-results article, #webkite-results aside, #webkite-results details, #webkite-results figcaption, #webkite-results figure, #webkite-results footer, #webkite-results header, #webkite-results hgroup, #webkite-results menu, #webkite-results nav, #webkite-results section {
+    display: block; }
+  #webkite-results body {
+    line-height: 1; }
+  #webkite-results ol, #webkite-results ul, #webkite-results ul li {
+    list-style: none; }
+  #webkite-results blockquote, #webkite-results q {
+    quotes: none; }
+  #webkite-results blockquote:before, #webkite-results blockquote:after {
+    content: '';
+    content: none; }
+  #webkite-results q:before, #webkite-results q:after {
+    content: '';
+    content: none; }
+  #webkite-results table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+/****************************************** BEGIN STYLES */
+#webkite-results {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 700px;
+  margin: 0 auto;
+  background: none;
+  border: none;
+  padding: 0 10px; }
+  #webkite-results #webkite-results-inner {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 10px;
+    font: 400 14px/normal "Open Sans"; }
+  #webkite-results a {
+    color: #1b9cd2;
+    text-decoration: none; }
+    #webkite-results a:hover {
+      color: #0073a7; }
+  #webkite-results.webkite-fade-out img {
+    opacity: 0.5; }
+
+/* TYPOGRAPHY */
+#webkite-results h1, #webkite-results h2 {
+  margin: 0; }
+#webkite-results h2 {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  display: inline-block;
+  font: 700 1.5em/1 "Open Sans";
+  color: rgba(0, 0, 0, 0.7); }
+#webkite-results p, #webkite-results li {
+  color: rgba(0, 0, 0, 0.4); }
+
+/********************************************** GENERAL */
+#webkite-results .webkite-results-header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.7);
+  min-height: 34px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 0;
+  padding: 10px;
+  position: relative; }
+  #webkite-results .webkite-results-header .webkite-match-info {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 70%;
+    padding-right: 20px;
+    vertical-align: top; }
+    #webkite-results .webkite-results-header .webkite-match-info > span {
+      font-weight: 800;
+      text-transform: uppercase;
+      font-style: italic; }
+  #webkite-results .webkite-results-header .webkite-embed-link {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30%;
+    text-align: right; }
+  #webkite-results .webkite-results-header .webkite-embed-wrapper {
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    background: #ffffff;
+    font-size: 13px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1; }
+    #webkite-results .webkite-results-header .webkite-embed-wrapper .webkite-embed-input {
+      padding: 0 20px 0 70px; }
+      #webkite-results .webkite-results-header .webkite-embed-wrapper .webkite-embed-input input {
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        border-radius: 2px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        color: rgba(0, 0, 0, 0.7);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 2px;
+        outline: none;
+        font-size: 10px;
+        position: relative;
+        width: 100%;
+        top: -2px; }
+    #webkite-results .webkite-results-header .webkite-embed-wrapper .webkite-embed-select {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      text-align: left;
+      padding: 10px;
+      white-space: nowrap; }
+    #webkite-results .webkite-results-header .webkite-embed-wrapper .webkite-embed-close {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 34px;
+      width: 30px;
+      padding: 10px;
+      text-indent: -99999px;
+      background: url('select-close.png') no-repeat center center; }
+#webkite-results .webkite-results-footer {
+  font-size: 14px;
+  position: relative;
+  min-height: 34px; }
+  #webkite-results .webkite-results-footer .webkite-branding-area a {
+    background: url("branding-light.svg") center top no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 34px;
+    width: 102px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  #webkite-results .webkite-results-footer .webkite-up-next {
+    padding-left: 122px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1; }
+    #webkite-results .webkite-results-footer .webkite-up-next > span {
+      font-size: 12px; }
+    #webkite-results .webkite-results-footer .webkite-up-next span {
+      color: rgba(0, 0, 0, 0.4); }
+    #webkite-results .webkite-results-footer .webkite-up-next .webkite-next-match {
+      margin-top: 8px; }
+      #webkite-results .webkite-results-footer .webkite-up-next .webkite-next-match span {
+        font-style: italic; }
+#webkite-results .webkite-hide {
+  display: none; }
+#webkite-results .webkite-show {
+  display: block; }
+
+/************************************ MATCH */
+#webkite-results .webkite-match-wrapper {
+  display: block;
+  width: auto;
+  margin-left: -20px;
+  margin-right: -20px; }
+#webkite-results .webkite-team {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  display: block;
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+  #webkite-results .webkite-team.webkite-team-away {
+    margin-top: 20px; }
+  #webkite-results .webkite-team .webkite-team-name, #webkite-results .webkite-team .webkite-team-score {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-right: 20px;
+    vertical-align: top; }
+  #webkite-results .webkite-team .webkite-team-image-wrapper {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    -o-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    padding-right: 20px; }
+    #webkite-results .webkite-team .webkite-team-image-wrapper .webkite-team-image {
+      -webkit-border-radius: 4px 0 0 4px;
+      -moz-border-radius: 4px 0 0 4px;
+      -ms-border-radius: 4px 0 0 4px;
+      -o-border-radius: 4px 0 0 4px;
+      border-radius: 4px 0 0 4px;
+      background-size: cover;
+      background-position: center center;
+      display: block;
+      height: 0;
+      padding-top: 100%;
+      width: 100%; }
+  #webkite-results .webkite-team .webkite-team-body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    padding-left: 100px;
+    padding-right: 0;
+    vertical-align: top; }
+  #webkite-results .webkite-team .webkite-team-name {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80%;
+    white-space: nowrap;
+    font-size: 28px;
+    line-height: 37px;
+    text-transform: uppercase;
+    padding-top: 20px; }
+  #webkite-results .webkite-team .webkite-team-score {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 20%;
+    text-align: right;
+    white-space: nowrap;
+    font-size: 64px;
+    line-height: 37px;
+    padding-top: 20px; }
+#webkite-results .webkite-versus {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin: -20px 0;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 34px;
+  height: 40px;
+  color: rgba(0, 0, 0, 0.7);
+  position: relative; }
+  #webkite-results .webkite-versus span {
+    padding: 0 10px;
+    display: inline-block;
+    height: 40px;
+    position: relative; }
+    #webkite-results .webkite-versus span i {
+      position: relative; }
+    #webkite-results .webkite-versus span:before {
+      background: #ffffff;
+      content: "";
+      position: absolute;
+      height: 4px;
+      left: 0;
+      right: 0;
+      top: 50%;
+      margin-top: -2px; }
+  #webkite-results .webkite-versus:before {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px; }
+
+/****** FLAG IMAGES */
+#webkite-results .webkite-team-image.webkite-Algeria {
+  background-image: url("Algeria.png"); }
+#webkite-results .webkite-team-image.webkite-Argentina {
+  background-image: url("Argentina.png"); }
+#webkite-results .webkite-team-image.webkite-Australia {
+  background-image: url("Australia.png"); }
+#webkite-results .webkite-team-image.webkite-Belgium {
+  background-image: url("Belgium.png"); }
+#webkite-results .webkite-team-image.webkite-Bosnia-Herzegovina {
+  background-image: url("Bosnia-Herzegovina.png"); }
+#webkite-results .webkite-team-image.webkite-Brazil {
+  background-image: url("Brazil.png"); }
+#webkite-results .webkite-team-image.webkite-C-te-d-Ivoire {
+  background-image: url("C-te-d-Ivoire.png"); }
+#webkite-results .webkite-team-image.webkite-Cameroon {
+  background-image: url("Cameroon.png"); }
+#webkite-results .webkite-team-image.webkite-Chile {
+  background-image: url("Chile.png"); }
+#webkite-results .webkite-team-image.webkite-Colombia {
+  background-image: url("Colombia.png"); }
+#webkite-results .webkite-team-image.webkite-Costa-Rica {
+  background-image: url("Costa-Rica.png"); }
+#webkite-results .webkite-team-image.webkite-Croatia {
+  background-image: url("Croatia.png"); }
+#webkite-results .webkite-team-image.webkite-Ecuador {
+  background-image: url("Ecuador.png"); }
+#webkite-results .webkite-team-image.webkite-England {
+  background-image: url("England.png"); }
+#webkite-results .webkite-team-image.webkite-France {
+  background-image: url("France.png"); }
+#webkite-results .webkite-team-image.webkite-Germany {
+  background-image: url("Germany.png"); }
+#webkite-results .webkite-team-image.webkite-Ghana {
+  background-image: url("Ghana.png"); }
+#webkite-results .webkite-team-image.webkite-Greece {
+  background-image: url("Greece.png"); }
+#webkite-results .webkite-team-image.webkite-Honduras {
+  background-image: url("Honduras.png"); }
+#webkite-results .webkite-team-image.webkite-Iran {
+  background-image: url("Iran.png"); }
+#webkite-results .webkite-team-image.webkite-Italy {
+  background-image: url("Italy.png"); }
+#webkite-results .webkite-team-image.webkite-Japan {
+  background-image: url("Japan.png"); }
+#webkite-results .webkite-team-image.webkite-Korea-Republic {
+  background-image: url("Korea-Republic.png"); }
+#webkite-results .webkite-team-image.webkite-Mexico {
+  background-image: url("Mexico.png"); }
+#webkite-results .webkite-team-image.webkite-Netherlands {
+  background-image: url("Netherlands.png"); }
+#webkite-results .webkite-team-image.webkite-Nigeria {
+  background-image: url("Nigeria.png"); }
+#webkite-results .webkite-team-image.webkite-Portugal {
+  background-image: url("Portugal.png"); }
+#webkite-results .webkite-team-image.webkite-Russia {
+  background-image: url("Russia.png"); }
+#webkite-results .webkite-team-image.webkite-Spain {
+  background-image: url("Spain.png"); }
+#webkite-results .webkite-team-image.webkite-Switzerland {
+  background-image: url("Switzerland.png"); }
+#webkite-results .webkite-team-image.webkite-United-States {
+  background-image: url("United-States.png"); }
+#webkite-results .webkite-team-image.webkite-Uruguay {
+  background-image: url("Uruguay.png"); }
+#webkite-results .webkite-team-image.webkite-placeholder {
+  background-image: url("TBD.png"); }
+
+/******************************************* NO RESULTS */
+#webkite-results .webkite-no-results {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  #webkite-results .webkite-no-results h2 {
+    margin-bottom: 20px; }
+
+/************************************** ELEMENT QUERIES */
+#webkite-results.xs .webkite-team {
+  height: 50px; }
+  #webkite-results.xs .webkite-team .webkite-team-image-wrapper {
+    width: 50px;
+    height: 50px; }
+  #webkite-results.xs .webkite-team .webkite-team-body {
+    padding-left: 60px; }
+  #webkite-results.xs .webkite-team .webkite-team-name {
+    width: 75%; }
+  #webkite-results.xs .webkite-team .webkite-team-score {
+    width: 25%; }
+  #webkite-results.xs .webkite-team .webkite-team-name {
+    font-size: 15px;
+    line-height: 7px; }
+  #webkite-results.xs .webkite-team .webkite-team-score {
+    font-size: 30px;
+    line-height: 7px; }
+#webkite-results.xs .webkite-versus {
+  font-size: 28px; }
+
+#webkite-results.sm .webkite-team {
+  height: 75px; }
+  #webkite-results.sm .webkite-team .webkite-team-image-wrapper {
+    width: 75px;
+    height: 75px; }
+  #webkite-results.sm .webkite-team .webkite-team-body {
+    padding-left: 95px; }
+  #webkite-results.sm .webkite-team .webkite-team-name {
+    width: 75%; }
+  #webkite-results.sm .webkite-team .webkite-team-score {
+    width: 25%; }
+  #webkite-results.sm .webkite-team .webkite-team-name {
+    font-size: 24px;
+    line-height: 32px; }
+  #webkite-results.sm .webkite-team .webkite-team-score {
+    font-size: 60px;
+    line-height: 32px; }

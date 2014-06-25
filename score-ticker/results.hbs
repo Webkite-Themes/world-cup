@@ -1,0 +1,102 @@
+{{log this}}
+<div id="webkite-results-inner">
+  {{>header}}
+  
+  <section class="webkite-match-wrapper">
+    {{#if items.length}}
+      {{#with items.[0]}}
+        <div class="webkite-team">
+          <div class="webkite-team-image-wrapper">
+            {{#facet name="Home Team"}}
+              <span class="webkite-team-image webkite-{{parameterize displayValue}}"></span>
+            {{/facet}}
+          </div><!--
+       --><div class="webkite-team-body">
+            <div class="webkite-team-name">
+              {{#facet name="Home Team"}}{{displayValue}}{{/facet}}
+            </div><!--
+         --><div class="webkite-team-score">
+              {{#if (find facets name="Status")}}
+                {{#facet name="Status"}}
+                  {{#if (equals displayValue "In-progress")}}
+                    {{#if (find ../../facets name="Home Score")}}
+                      {{#with ../../../items.[0]}}
+                        {{#facet name="Home Score"}}{{displayValue}}{{/facet}}
+                      {{/with}}
+                    {{else}}
+                      0
+                    {{/if}}
+                  {{else}}
+                    -
+                  {{/if}}
+                {{/facet}}
+              {{else}}
+                -
+              {{/if}}
+            </div>
+          </div>
+        </div>
+        
+        <span class="webkite-versus"><span><i>vs</i></span></span>
+        
+        <div class="webkite-team webkite-team-away">
+          <div class="webkite-team-image-wrapper">
+            {{#facet name="Away Team"}}
+              <span class="webkite-team-image webkite-{{parameterize displayValue}}"></span>
+            {{/facet}}
+          </div><!--
+       --><div class="webkite-team-body">
+            <div class="webkite-team-name">
+              {{#facet name="Away Team"}}{{displayValue}}{{/facet}}
+            </div><!--
+         --><div class="webkite-team-score">
+              {{#if (find facets name="Status")}}
+                {{#facet name="Status"}}
+                  {{#if (equals displayValue "In-progress")}}
+                    {{#if (find ../../facets name="Away Score")}}
+                      {{#with ../../../items.[0]}}
+                        {{#facet name="Away Score"}}{{displayValue}}{{/facet}}
+                      {{/with}}
+                    {{else}}
+                      0
+                    {{/if}}
+                  {{else}}
+                    -
+                  {{/if}}
+                {{/facet}}
+              {{else}}
+                -
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      {{/with}}
+    {{else}}
+      <!-- no matches -->
+      <div class="webkite-team">
+        <div class="webkite-team-image-wrapper">
+          <span class="webkite-team-image webkite-placeholder"></span>
+        </div><!--
+     --><div class="webkite-team-body">
+          <div class="webkite-team-name">Team TBD</div><!--
+       --><div class="webkite-team-score">-</div>
+        </div>
+      </div>
+
+      <span class="webkite-versus"><span><i>vs</i></span></span>
+      
+      <div class="webkite-team webkite-team-away">
+        <div class="webkite-team-image-wrapper">
+          <span class="webkite-team-image webkite-placeholder"></span>
+        </div><!--
+     --><div class="webkite-team-body">
+          <div class="webkite-team-name">Team TBD</div><!--
+       --><div class="webkite-team-score">-</div>
+        </div>
+      </div>
+
+    {{/if}}
+  </section>
+  
+  {{>footer}}
+</div>

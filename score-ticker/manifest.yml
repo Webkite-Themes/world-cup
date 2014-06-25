@@ -1,0 +1,56 @@
+theme:
+  name: world-cup-score-ticker
+
+settings:
+  pagination:
+    - 2
+
+assets:
+  images:
+    - branding-light.svg
+    - branding-dark.svg
+    - select-close.png
+    - TBD.png
+    - Algeria.png
+    - Argentina.png
+    - Australia.png
+    - Belgium.png
+    - Bosnia-Herzegovina.png
+    - Brazil.png
+    - C-te-d-Ivoire.png
+    - Cameroon.png
+    - Chile.png
+    - Colombia.png
+    - Costa-Rica.png
+    - Croatia.png
+    - Ecuador.png
+    - England.png
+    - France.png
+    - Germany.png
+    - Ghana.png
+    - Greece.png
+    - Honduras.png
+    - Iran.png
+    - Italy.png
+    - Japan.png
+    - Korea-Republic.png
+    - Mexico.png
+    - Netherlands.png
+    - Nigeria.png
+    - Portugal.png
+    - Russia.png
+    - Spain.png
+    - Switzerland.png
+    - United-States.png
+    - Uruguay.png
+
+  stylesheets:
+    - light.css
+
+  templates:
+    - results.handlebars.js
+
+  partials:
+    - header.handlebars.js
+    - footer.handlebars.js
+

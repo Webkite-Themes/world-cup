@@ -1,0 +1,191 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,800,800italic");
+
+//*******************************************************SIZES
+$mainGutter: 20px;
+
+//***********************************************COLOR PALETTES
+
+$linkColor: #1b9cd2;
+$linkHover: #0073a7;
+  
+//TOKEN COLORS
+$tokenFirst: $linkColor;
+$tokenSecond: #39a17c;
+$tokenThird: #a8936f;
+$tokenFourth: #e6af52;
+$tokenFifth: #6f7ca8;
+
+@if $colorVariant == light{
+  $backgroundColor:#ffffff;
+  $highOpacity: rgba(0,0,0,.9);
+  $medOpacity: rgba(0,0,0,.7);
+  $lightOpacity: rgba(0,0,0,.4);
+  $lighterOpacity: rgba(0,0,0,.1);
+  $lightestOpacity: rgba(0,0,0,.05);
+  $lighterthanlightestOpacity: rgba(0,0,0,.04);
+  $lighterevenstillOpacity: rgba(0,0,0,.02);
+  $shadowOpacity: rgba(0,0,0,.2);
+  //FILTER SHADE
+  $stepOne: rgba(0,0,0,0.4);
+  $stepTwo: rgba(0,0,0,0.3);
+  $stepThree: rgba(0,0,0,0.15);
+  $stepFour: rgba(0,0,0,0.02);
+  $stepFive: rgba(0,0,0,0);
+  }
+@if $colorVariant == dark{
+  $backgroundColor:#000000;
+  $highOpacity: rgba(255,255,255,1);
+  $medOpacity: rgba(255,255,255,.8);
+  $lightOpacity: rgba(255,255,255,.7);
+  $lighterOpacity: rgba(255,255,255,.1);
+  $lightestOpacity: rgba(255,255,255,.05);
+  $lighterthanlightestOpacity: rgba(255,255,255,.08);
+  $lighterevenstillOpacity: rgba(255,255,255,.05);
+  $shadowOpacity: rgba(0,0,0,.5);
+  //FILTER SHADE
+  $stepOne: rgba(0,0,0,0.5);
+  $stepTwo: rgba(0,0,0,0.4);
+  $stepThree: rgba(0,0,0,0.2);
+  $stepFour: rgba(0,0,0,0.05);
+  $stepFive: rgba(0,0,0,0);
+  }
+
+//******************************************************MIXINS
+@mixin roundedUp($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+  }
+@mixin boxedUp{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+@mixin shadowHere{
+  -webkit-box-shadow: 0 2px 5px $shadowOpacity, 0 1px 1px $shadowOpacity;
+  -moz-box-shadow: 0 2px 5px $shadowOpacity, 0 1px 1px $shadowOpacity;
+  box-shadow: 0 2px 5px $shadowOpacity, 0 1px 1px $shadowOpacity;
+  }
+@mixin hyphenGreat{
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  }
+@mixin ellipsisThis{
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  }
+@mixin breakThat{
+  &::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;margin: 0;padding: 0; white-space: pre-line;
+    margin-bottom: $mainGutter;
+    }
+  }
+@mixin clearThat{
+  &::after{
+    content: '';
+    clear:both;
+    display: table;
+    }
+  }
+@mixin putHere ($position){
+  top: $position;
+  right: $position;
+  bottom: $position;
+  left: $position;
+  }
+@mixin gradiateHorizontal{
+  @if $colorVariant == light{background: url("gradient-fallback-light.png") repeat-y;}
+  @if $colorVariant == dark{background: url("gradient-fallback-dark.png") repeat-y;}  
+  background: -moz-linear-gradient(left,  $stepOne 0%, $stepTwo 5%, $stepThree 25%, $stepFour 75%, $stepFive 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,$stepOne), color-stop(5%,$stepTwo), color-stop(25%,$stepThree), color-stop(75%,$stepFour), color-stop(100%,$stepFive));
+  background: -webkit-linear-gradient(left,  $stepOne 0%,$stepTwo 5%,$stepThree 25%,$stepFour 75%,$stepFive 100%);
+  background: -o-linear-gradient(left,  $stepOne 0%,$stepTwo 5%,$stepThree 25%,$stepFour 75%,$stepFive 100%);
+  background: -ms-linear-gradient(left,  $stepOne 0%,$stepTwo 5%,$stepThree 25%,$stepFour 75%,$stepFive 100%);
+  background: linear-gradient(to right,  $stepOne 0%,$stepTwo 5%,$stepThree 25%,$stepFour 75%,$stepFive 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=1 );
+  }
+@mixin noShadows{
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; 
+  box-shadow: none;
+  }
+@mixin hyphenLess{
+  word-wrap: normal;
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  -ms-hyphens: manual;
+  }
+
+//********************************************************RESET
+@mixin resetThings{
+
+  div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    @include noShadows;
+    @include hyphenLess;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    text-transform: none;
+    vertical-align: baseline;
+    text-rendering: auto;
+    }
+  button, select, input{
+    text-transform: none;
+    &:active{@include noShadows;}  
+    }
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+    }
+   
+  /* HTML5 display-role reset for older browsers */
+   
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+   
+  body {
+    line-height: 1; }
+   
+  ol, ul, ul li {
+    list-style: none; }
+   
+  blockquote, q {
+    quotes: none; }
+   
+  blockquote {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+   
+  q {
+    &:before, &:after {
+      content: '';
+      content: none; } }
+   
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+  }
+
+//*****************************FILTER SORT AND PAGINATION STYLES
+//
+//
+@mixin universalStyles{
+  /******************************************** NAVIGATIONALS */
+
+  }

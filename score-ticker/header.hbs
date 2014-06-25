@@ -1,0 +1,27 @@
+<header class="webkite-results-header">
+  <div class="webkite-match-info">
+    {{#if items.length}}
+      {{#with items.[0]}}
+        {{#facet name="Status"}}
+          {{#if (equals displayValue "In-progress")}}
+            <span>Up Now</span>
+          {{else}}
+            <span>Up Next</span>
+          {{/if}}
+          &nbsp;{{displayValue}}
+        {{/facet}}
+      {{/with}}
+    {{/if}}
+  </div><!--
+--><div class="webkite-embed-link">
+    <a href="#webkite-embedder" class="webkite-toggle" data-target="#webkite-embedder">Embed &lt;/&gt;</a>
+  </div>
+
+  <div id="webkite-embedder" class="webkite-embed-wrapper webkite-hide">
+    <a href="#" class="webkite-embed-select" onclick="document.getElementById('webkiteEmbedInput').focus(); return false;">Select All</a>
+    <div class="webkite-embed-input">
+      <input id="webkiteEmbedInput" type="text" value="This would be the embed code here that someone would copy" onfocus="this.select();" onmouseup="return false;" readonly />
+    </div>
+    <a href="#" class="webkite-toggle webkite-embed-close" data-target="#webkite-embedder">X</a>
+  </div>
+</header>
