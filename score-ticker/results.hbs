@@ -16,20 +16,12 @@
               {{#facet name="Home Team"}}{{displayValue}}{{/facet}}
             </div><!--
          --><div class="webkite-team-score">
-              {{#if (find facets name="Status")}}
-                {{#facet name="Status"}}
-                  {{#if (equals displayValue "In-progress")}}
-                    {{#if (find ../../facets name="Home Score")}}
-                      {{#with ../../../items.[0]}}
-                        {{#facet name="Home Score"}}{{displayValue}}{{/facet}}
-                      {{/with}}
-                    {{else}}
-                      0
-                    {{/if}}
-                  {{else}}
-                    -
-                  {{/if}}
-                {{/facet}}
+              {{#if (find facets name="Status" displayValue="In-progress")}}
+                {{#if (find facets name="Home Score")}}
+                  {{#facet name="Home Score"}}{{displayValue}}{{/facet}}
+                {{else}}
+                  0
+                {{/if}}
               {{else}}
                 -
               {{/if}}
@@ -50,20 +42,12 @@
               {{#facet name="Away Team"}}{{displayValue}}{{/facet}}
             </div><!--
          --><div class="webkite-team-score">
-              {{#if (find facets name="Status")}}
-                {{#facet name="Status"}}
-                  {{#if (equals displayValue "In-progress")}}
-                    {{#if (find ../../facets name="Away Score")}}
-                      {{#with ../../../items.[0]}}
-                        {{#facet name="Away Score"}}{{displayValue}}{{/facet}}
-                      {{/with}}
-                    {{else}}
-                      0
-                    {{/if}}
-                  {{else}}
-                    -
-                  {{/if}}
-                {{/facet}}
+              {{#if (find facets name="Status" displayValue="In-progress")}}
+                {{#if (find facets name="Away Score")}}
+                  {{#facet name="Away Score"}}{{displayValue}}{{/facet}}
+                {{else}}
+                  0
+                {{/if}}
               {{else}}
                 -
               {{/if}}
