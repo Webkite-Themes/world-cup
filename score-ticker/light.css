@@ -18,7 +18,10 @@
     font: inherit;
     text-transform: none;
     vertical-align: baseline;
-    text-rendering: auto; }
+    text-rendering: auto;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; }
   #webkite-results button, #webkite-results select, #webkite-results input {
     text-transform: none; }
     #webkite-results button:active, #webkite-results select:active, #webkite-results input:active {
