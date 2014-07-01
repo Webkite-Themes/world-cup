@@ -1,0 +1,77 @@
+theme:
+  name: world-cup-matches
+
+settings:
+  pagination:
+    - 64
+
+assets:
+  images:
+    - angle-light.png
+    - clear-all-icon.png
+    - plus-light.png
+    - sort-direction.png
+    - branding-light.svg
+    - branding-dark.svg
+    - select-close.png
+    - TBD.png
+    - Algeria.png
+    - Argentina.png
+    - Australia.png
+    - Belgium.png
+    - Bosnia-Herzegovina.png
+    - Brazil.png
+    - C-te-d-Ivoire.png
+    - Cameroon.png
+    - Chile.png
+    - Colombia.png
+    - Costa-Rica.png
+    - Croatia.png
+    - Ecuador.png
+    - England.png
+    - France.png
+    - Germany.png
+    - Ghana.png
+    - Greece.png
+    - Honduras.png
+    - Iran.png
+    - Italy.png
+    - Japan.png
+    - Korea-Republic.png
+    - Mexico.png
+    - Netherlands.png
+    - Nigeria.png
+    - Portugal.png
+    - Russia.png
+    - Spain.png
+    - Switzerland.png
+    - United-States.png
+    - Uruguay.png
+    - current-Algeria.png
+    - current-Argentina.png
+    - current-Belgium.png
+    - current-Brazil.png
+    - current-Chile.png
+    - current-Colombia.png
+    - current-Costa-Rica.png
+    - current-France.png
+    - current-Germany.png
+    - current-Greece.png
+    - current-Mexico.png
+    - current-Netherlands.png
+    - current-Nigeria.png
+    - current-Switzerland.png
+    - current-United-States.png
+    - current-Uruguay.png
+
+  stylesheets:
+    - light.css
+
+  templates:
+    - results.handlebars.js
+
+  partials:
+    - header.handlebars.js
+    - filters.handlebars.js
+    - sorts.handlebars.js
+    - footer.handlebars.js

@@ -1,0 +1,603 @@
+$colorVariant:light;
+@import url("//fonts.googleapis.com/css?family=Oswald");
+
+//CALL UNIVERSALS
+@import 'universals';
+
+@mixin rotateThis($deg){
+  -moz-transform:rotate($deg);  
+  -webkit-transform:rotate($deg);  
+  -o-transform:rotate($deg);  
+  -ms-transform:rotate($deg);
+  transform:rotate($deg);
+}
+
+/* RESET */
+#webkite-results{
+  @include resetThings;
+  }
+
+/****************************************** BEGIN STYLES */
+#webkite-results{
+  @include boxedUp;
+  @include roundedUp(3px);
+  max-width:700px;
+  margin:0 auto;
+  background: $backgroundColor;
+  border: 1px solid $lighterOpacity;
+  padding:$mainGutter $mainGutter $mainGutter/2 $mainGutter;
+  font: 400 14px/normal "Oswald", sans-serif;
+  color:$medOpacity;
+  a{color:$linkColor;
+      text-decoration: none; 
+    &:hover{color: $linkHover;}
+    }
+  &.webkite-fade-out img{opacity: .5;}
+  }
+  
+/* TYPOGRAPHY */
+#webkite-results{
+  h1, h2{
+    margin: 0;
+    }
+  h2{
+    @include hyphenGreat;
+    display: inline-block;
+    font: 700 1.5em/1 "Open Sans";
+    color: $medOpacity;
+    }
+  p, li{
+    color: $medOpacity;
+    }
+  }
+
+//*******************************************UNIVERSALS
+@include universalStyles;
+
+/********************************************** BLOCKS */
+#webkite-results{
+  .webkite-block-group {
+    @include boxedUp;
+    margin-left:-$mainGutter;
+    vertical-align: top;
+    text-align: left;
+    position:relative;
+    }
+  .webkite-block{
+    @include boxedUp;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-left: $mainGutter;
+    width:100%;
+    &.webkite-block-eighteen {width:18%;}
+    &.webkite-block-twenty {width:20%;}
+    &.webkite-block-twentytwo {width:22%;}
+    &.webkite-block-thirty {width:30%;}
+    &.webkite-block-forty {width:40%;}
+    &.webkite-block-fifty {width:50%;}
+    &.webkite-block-sixty {width:60%;}
+    &.webkite-block-seventy {width:70%;}
+    }
+  }
+  
+/********************************************** GENERAL */
+#webkite-results{
+  .webkite-world-cup-current{
+    @include boxedUp;
+    @include roundedUp(3px 3px 0 0);
+    line-height: 1;
+    color:$medOpacity;
+    min-height:34px;
+    margin-top:-$mainGutter;
+    margin-left:-$mainGutter;
+    margin-right:-$mainGutter;
+    margin-bottom:$mainGutter;
+    padding:0;
+    background:$lighterthanlightestOpacity;
+    border-bottom:1px solid $lighterOpacity;
+    position:relative;
+    }
+  .webkite-results-footer{
+    font-size:14px;
+    position:relative;
+    min-height:34px;
+    text-align:center;
+    .webkite-branding-area a {
+      @if $colorVariant == light{background: url("branding-light.svg") center top no-repeat;}
+      @if $colorVariant == dark{background: url("branding-dark.svg") center top no-repeat;}
+      background-size:100%;
+      display: inline-block;
+      height: 34px;
+      width: 102px;
+      margin:0 auto;
+      }
+    }
+    .webkite-hide{display:none;}
+    .webkite-show{display:block;}
+  }
+
+/********************* CURRENT */
+#webkite-results{
+  .webkite-world-cup-current{
+    height:80px;
+    position:relative;
+    .webkite-current-status{
+      position:absolute;
+      color:rgba(0,0,0,0.2);
+      line-height:76px;
+      width:60px;
+      top:0;
+      left:50%;
+      margin-left:-30px;
+      text-align:center;
+      > span{line-height:18px; font-size:14px; display:inline-block; vertical-align:middle;}
+      }
+    .webkite-block-group{margin-left:0; overflow:hidden;}
+    .webkite-block{padding-left:0;}
+    h3{
+      display:block;
+      line-height:80px;
+      margin:0;
+      padding:0;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      position:relative;
+      color:$highOpacity;
+      }
+    .webkite-current-team{
+      font-size:24px;
+      display:block;
+      vertical-align:middle;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      position:relative;
+      }
+    .webkite-current-score{
+      @include boxedUp;
+      text-align:center;
+      color:$linkColor; 
+      font-size:36px; 
+      vertical-align:middle; 
+      padding:0 $mainGutter/2;
+      position:absolute;
+      right:0;
+      top:0;
+      width:50px;
+      }
+    .webkite-current-home{
+      text-align:right;
+      padding-right:25px;
+      &:before{
+        content:'';
+        background-position:0 0;
+        background-repeat:no-repeat;
+        height:80px;
+        width:290px;
+        left:-145px;
+        top:50%;
+        margin-top:-40px;
+        position:absolute;
+        }
+      h3{
+        padding-left:65px; 
+        padding-right:50px;
+        }
+      }
+    .webkite-current-away{
+      text-align:left;
+      padding-left:25px;
+      position:relative;
+      &:before{
+        content:'';
+        background-position:0 0;
+        background-repeat:no-repeat;
+        height:80px;
+        width:290px;
+        right:-145px;
+        top:50%;
+        margin-top:-40px;
+        position:absolute;
+        }
+      h3{
+        padding-right:65px; 
+        padding-left:50px;
+        }
+      .webkite-current-score{
+        left:0;
+        right:auto;
+        }
+      }
+    }
+  
+  }
+  
+/************************************ RESULTS */
+#webkite-results{
+  .webkite-results-wrapper{
+    margin-bottom:$mainGutter/2;
+    max-height:235px;
+    overflow:hidden;
+    overflow-y:auto;
+    > .webkite-block-group{
+      margin-left:-$mainGutter/2;
+      margin-top:-$mainGutter/4;
+      }
+    }
+  .webkite-result{
+    height:55px;
+    padding-left:$mainGutter/2;
+    margin-top:$mainGutter/4;
+    line-height:20px;
+    .webkite-block-group{
+      height:100%;
+      margin-left:-1px;
+      > .webkite-block {
+        height:100%;
+        padding-left:1px;
+        > div {
+          @include boxedUp;
+          height:100%;
+          background:rgba(0,0,0,0.03);
+          padding:$mainGutter/2.5 $mainGutter/2;
+          }
+        }
+      }
+    .webkite-block-eighteen, .webkite-block-twentytwo{font-size:12px; text-align:center; position:relative;}
+    .webkite-block-sixty{
+      ul{
+        display:block;
+        list-style:none;
+        margin:0;
+        padding:0;
+        li{
+          margin:0;
+          padding:0 $mainGutter 0 0;
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          position:relative;
+          .webkite-team-score{
+            position:absolute;
+            top:0;
+            right:0;
+            min-width:6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+/****** IMAGES */
+#webkite-results{
+  .webkite-world-cup-current .webkite-block-fifty{
+    &.webkite-Algeria:before{background-image:url("current-Algeria.png");}
+    &.webkite-Argentina:before{background-image:url("current-Argentina.png");}
+    &.webkite-Belgium:before{background-image:url("current-Belgium.png");}
+    &.webkite-Brazil:before{background-image:url("current-Brazil.png");}
+    &.webkite-Chile:before{background-image:url("current-Chile.png");}
+    &.webkite-Colombia:before{background-image:url("current-Colombia.png");}
+    &.webkite-Costa-Rica:before{background-image:url("current-Costa-Rica.png");}
+    &.webkite-France:before{background-image:url("current-France.png");}
+    &.webkite-Germany:before{background-image:url("current-Germany.png");}
+    &.webkite-Greece:before{background-image:url("current-Greece.png");}
+    &.webkite-Mexico:before{background-image:url("current-Mexico.png");}
+    &.webkite-Netherlands:before{background-image:url("current-Netherlands.png");}
+    &.webkite-Nigeria:before{background-image:url("current-Nigeria.png");}
+    &.webkite-Switzerland:before{background-image:url("current-Switzerland.png");}
+    &.webkite-United-States:before{background-image:url("current-United-States.png");}
+    &.webkite-Uruguay:before{background-image:url("current-Uruguay.png");}
+  }
+}
+
+
+/******** TIMERS */
+#webkite-results{
+  .webkite-time-wrapper{
+    position:absolute;
+    height:40px;
+    width:40px;
+    line-height:40px;
+    top:50%;
+    left:50%;
+    margin-top:-20px;
+    margin-left:-20px;
+    }
+  .webkite-world-cup-current .webkite-current-status.webkite-time-wrapper{
+    position:absolute;
+    height:40px;
+    width:40px;
+    line-height:40px;
+    top:50%;
+    left:50%;
+    margin-top:-20px;
+    margin-left:-20px;
+    }
+  .webkite-time-circle {
+    @include boxedUp;
+    @include roundedUp(40px);
+    width:40px;
+    height:40px;
+    background:none;
+    border: 2px solid $lighterOpacity;
+    .webkite-time-mask{
+      @include boxedUp;
+      @include roundedUp(42px);
+      height:42px;
+      width:42px;
+      position:absolute;
+      top:-1px;
+      left:-1px;
+      clip: rect(0px, 42px, 42px, 21px);
+      .webkite-time-fill{
+        @include boxedUp;
+        @include roundedUp(42px);
+        position:absolute;
+        height:42px;
+        width:42px;
+        top:0;
+        left:0;
+        border:4px solid #83c852;
+        clip: rect(0px, 21px, 42px, 0px);
+        }
+      &.webkite-mask-full{
+        clip: rect(0px, 21px, 42px, 0px);
+        .webkite-time-fill{
+          clip: rect(0px, 42px, 42px, 21px);
+          }
+        }
+      }
+    &.webkite-time{
+      .webkite-time-mask .webkite-time-fill{@include rotateThis(180deg);}
+      .webkite-time-mask.webkite-mask-full .webkite-time-fill{@include rotateThis(180deg);}
+      }
+    .webkite-time-number{
+      position:absolute;
+      top:0;
+      left:0;
+      width:40px;
+      height:40px;
+      line-height:40px;
+      font-size:14px;
+      color:$highOpacity;
+      }
+    }
+  }
+
+/***** TIMER ROTATIONS */
+#webkite-results .webkite-time-circle{
+  @for $i from 1 through 45 {
+    &.webkite-time-#{$i}{
+      .webkite-mask-half .webkite-time-fill{
+          @include rotateThis(4deg * $i);
+        }
+      .webkite-mask-full .webkite-time-fill{
+          @include rotateThis(0deg);
+        }
+      }
+    }
+  
+  @for $i from 46 through 90 {
+    &.webkite-time-#{$i}{
+      .webkite-mask-half .webkite-time-fill{
+          @include rotateThis(180deg);
+        }    
+      .webkite-mask-full .webkite-time-fill{
+          @include rotateThis((4deg * $i) - 180deg);
+        }
+      }
+    }
+  
+  }
+  
+
+/******************************************* NO RESULTS */
+#webkite-results{
+  
+  .webkite-no-results{
+    padding: $mainGutter 0;
+    margin-bottom: $mainGutter;
+    border-bottom: 1px solid $lightestOpacity;
+    h2{
+      margin-bottom: $mainGutter;
+      }
+    }
+
+  }
+  
+/************************************** ELEMENT QUERIES */
+#webkite-results.xs{
+  .webkite-world-cup-current{
+    height:auto;
+    padding-top:$mainGutter/4;
+    padding-bottom:$mainGutter/4;
+    .webkite-current-status{
+      line-height:64px;
+      width:70px;
+      top:0;
+      left:auto;
+      right:0;
+      margin-left:0;
+      > span{line-height:16px; font-size:13px}
+      &.webkite-time-wrapper{
+        line-height:40px;
+        width:40px;
+        height:40px;
+        top:50%;
+        left:auto;
+        right:10px;
+        margin-top:-20px;
+        margin-left:0;
+        }
+      }        
+    .webkite-block-fifty{
+      width:100%;
+      }
+    h3{
+      line-height:30px;
+      }
+    .webkite-current-team{
+      font-size:18px;
+      }
+    .webkite-current-score{
+      font-size:18px; 
+      width:35px;
+      }
+    .webkite-current-home{
+      padding-right:70px;
+      text-align:left;
+      &:before{
+        height:25px;
+        width:45px;
+        background-position:0 0;
+        left:10px;
+        top:2px;
+        right:auto;
+        margin:0;
+        background-size:100%;
+        }
+      h3{
+        padding-left:65px; 
+        padding-right:35px;
+        }
+      }
+    .webkite-current-away{
+      padding-right:70px;
+      padding-left:0;
+      text-align:left;
+      &:before{
+        height:25px;
+        width:45px;
+        left:10px;
+        top:2px;
+        right:auto;
+        margin:0;
+        background-position:0 0;
+        background-size:100%;
+        }
+      h3{
+        padding-left:65px; 
+        padding-right:35px;
+        }
+      .webkite-current-score{
+        left:auto;
+        right:0;
+        }
+      }
+    }
+
+  .webkite-world-cup-current .webkite-block-fifty{
+    &.webkite-Algeria:before{background-image:url("Algeria.png");}
+    &.webkite-Argentina:before{background-image:url("Argentina.png");}
+    &.webkite-Belgium:before{background-image:url("Belgium.png");}
+    &.webkite-Brazil:before{background-image:url("Brazil.png");}
+    &.webkite-Chile:before{background-image:url("Chile.png");}
+    &.webkite-Colombia:before{background-image:url("Colombia.png");}
+    &.webkite-Costa-Rica:before{background-image:url("Costa-Rica.png");}
+    &.webkite-France:before{background-image:url("France.png");}
+    &.webkite-Germany:before{background-image:url("Germany.png");}
+    &.webkite-Greece:before{background-image:url("Greece.png");}
+    &.webkite-Mexico:before{background-image:url("Mexico.png");}
+    &.webkite-Netherlands:before{background-image:url("Netherlands.png");}
+    &.webkite-Nigeria:before{background-image:url("Nigeria.png");}
+    &.webkite-Switzerland:before{background-image:url("Switzerland.png");}
+    &.webkite-United-States:before{background-image:url("United-States.png");}
+    &.webkite-Uruguay:before{background-image:url("Uruguay.png");}
+  }
+
+
+
+  .webkite-result{
+    width:100%;
+    .webkite-block-group{
+      > .webkite-block {
+        > div {
+          padding:$mainGutter/2.5 $mainGutter/2;
+          }
+        }
+      }
+    }
+    
+  }
+  
+#webkite-results.sm{
+  .webkite-world-cup-current{
+    height:72px;
+    .webkite-current-status{
+      line-height:68px;
+      width:50px;
+      top:0;
+      left:50%;
+      margin-left:-25px;
+      > span{line-height:15px; font-size:12px}
+      &.webkite-time-wrapper{
+        line-height:40px;
+        width:40px;
+        height:40px;
+        top:50%;
+        left:50%;
+        margin-top:-20px;
+        margin-left:-20px;
+        }
+      }    
+    h3{
+      line-height:72px;
+      }
+    .webkite-current-team{
+      font-size:22px;
+      }
+    .webkite-current-score{
+      font-size:30px; 
+      width:40px;
+      }
+    .webkite-current-home{
+      padding-right:20px;
+      &:before{
+        height:72px;
+        left:-130px;
+        margin-top:-36px;
+        background-size:auto 72px;
+        }
+      h3{
+        padding-left:55px; 
+        padding-right:40px;
+        }
+      }
+    .webkite-current-away{
+      padding-left:20px;
+      &:before{
+        height:72px;
+        right:-160px;
+        margin-top:-36px;
+        background-size:auto 72px;
+        }
+      h3{
+        padding-right:55px; 
+        padding-left:40px;
+        }
+      }
+    }
+
+  .webkite-result{
+    .webkite-block-group{
+      > .webkite-block {
+        > div {
+          padding:$mainGutter/2.5 6px;
+          }
+        }
+      }
+    .webkite-block-sixty{
+      ul li{
+        padding-right:3*$mainGutter/4;
+        font-size:13px;
+        }
+      }      
+    }
+
+  .webkite-result .webkite-block.webkite-block-twentytwo {width:29%;}
+  .webkite-result .webkite-block.webkite-block-sixty {width:49%;}
+  .webkite-result .webkite-block.webkite-block-eighteen {width:22%;}
+  }

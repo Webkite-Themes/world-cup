@@ -1,0 +1,67 @@
+{{#if items.length}}
+  <header class="webkite-world-cup-current">
+    {{#with items.[0]}}
+      {{#if (find facets name="Current Game Minute")}}
+        <div class="webkite-current-status webkite-time-wrapper">
+          <div class="webkite-time-circle webkite-time{{#facet name="Current Game Minute"}}-{{displayValue}}{{/facet}}">
+            <div class="webkite-time-mask webkite-mask-full">
+              <div class="webkite-time-fill"></div>
+            </div>
+            <div class="webkite-time-mask webkite-mask-half">
+              <div class="webkite-time-fill"></div>
+              <div class="webkite-time-fill webkite-time-fix"></div>
+            </div>
+            <div class="webkite-time-number"><span>{{#facet name="Current Game Minute"}}{{displayValue}}{{/facet}}</span></div>
+          </div>
+        </div>
+      {{else}}
+        <div class="webkite-current-status">
+          <span>upcoming match</span>
+        </div>     
+      {{/if}}
+      
+      <div class="webkite-block-group">
+        <div class="webkite-block webkite-block-fifty webkite-current-home{{#facet name="Current Game Home Team"}} webkite-{{parameterize displayValue}}{{/facet}}">
+          <h3>
+            {{#facet name="Current Game Home Team"}}
+              <span class="webkite-current-team">
+                {{~#if (equals displayValue "United States")~}}
+                  USA
+                {{~else~}}
+                  {{displayValue}}
+                {{~/if~}}
+              </span>
+            {{/facet}}
+            <span class="webkite-current-score">
+              {{~#if (find facets name="Current Game Home Score")~}}
+                {{~#facet name="Current Game Home Score"}}{{displayValue}}{{/facet~}}
+              {{~else}}
+                0
+              {{~/if~}}
+            </span>
+          </h3>
+        </div><!--
+     --><div class="webkite-block webkite-block-fifty webkite-current-away{{#facet name="Current Game Away Team"}} webkite-{{parameterize displayValue}}{{/facet}}">
+          <h3>
+            <span class="webkite-current-score">
+              {{~#if (find facets name="Current Game Away Score")~}}
+                {{~#facet name="Current Game Away Score"}}{{displayValue}}{{/facet~}}
+              {{~else}}
+                0
+              {{~/if~}}
+            </span>
+            {{#facet name="Current Game Away Team"}}
+              <span class="webkite-current-team">
+                {{~#if (equals displayValue "United States")~}}
+                  USA
+                {{~else~}}
+                  {{displayValue}}
+                {{~/if~}}
+              </span>
+            {{/facet}}
+          </h3>
+        </div>
+      </div>
+    {{/with}}
+  </header>
+{{/if}}

@@ -1,0 +1,2035 @@
+@import url("//fonts.googleapis.com/css?family=Oswald");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,800,800italic");
+/* RESET */
+#webkite-results {
+  /* HTML5 display-role reset for older browsers */ }
+  #webkite-results div, #webkite-results span, #webkite-results applet, #webkite-results object, #webkite-results iframe, #webkite-results h1, #webkite-results h2, #webkite-results h3, #webkite-results h4, #webkite-results h5, #webkite-results h6, #webkite-results p, #webkite-results blockquote, #webkite-results pre, #webkite-results a, #webkite-results abbr, #webkite-results acronym, #webkite-results address, #webkite-results big, #webkite-results cite, #webkite-results code, #webkite-results del, #webkite-results dfn, #webkite-results em, #webkite-results img, #webkite-results ins, #webkite-results kbd, #webkite-results q, #webkite-results s, #webkite-results samp, #webkite-results small, #webkite-results strike, #webkite-results strong, #webkite-results sub, #webkite-results sup, #webkite-results tt, #webkite-results var, #webkite-results b, #webkite-results u, #webkite-results i, #webkite-results center, #webkite-results dl, #webkite-results dt, #webkite-results dd, #webkite-results ol, #webkite-results ul, #webkite-results li, #webkite-results fieldset, #webkite-results form, #webkite-results label, #webkite-results legend, #webkite-results table, #webkite-results caption, #webkite-results tbody, #webkite-results tfoot, #webkite-results thead, #webkite-results tr, #webkite-results th, #webkite-results td, #webkite-results article, #webkite-results aside, #webkite-results canvas, #webkite-results details, #webkite-results embed, #webkite-results figure, #webkite-results figcaption, #webkite-results footer, #webkite-results header, #webkite-results hgroup, #webkite-results menu, #webkite-results nav, #webkite-results output, #webkite-results ruby, #webkite-results section, #webkite-results summary, #webkite-results time, #webkite-results mark, #webkite-results audio, #webkite-results video {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    word-wrap: normal;
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    text-transform: none;
+    vertical-align: baseline;
+    text-rendering: auto;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; }
+  #webkite-results button, #webkite-results select, #webkite-results input {
+    text-transform: none; }
+    #webkite-results button:active, #webkite-results select:active, #webkite-results input:active {
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  #webkite-results button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  #webkite-results article, #webkite-results aside, #webkite-results details, #webkite-results figcaption, #webkite-results figure, #webkite-results footer, #webkite-results header, #webkite-results hgroup, #webkite-results menu, #webkite-results nav, #webkite-results section {
+    display: block; }
+  #webkite-results body {
+    line-height: 1; }
+  #webkite-results ol, #webkite-results ul, #webkite-results ul li {
+    list-style: none; }
+  #webkite-results blockquote, #webkite-results q {
+    quotes: none; }
+  #webkite-results blockquote:before, #webkite-results blockquote:after {
+    content: '';
+    content: none; }
+  #webkite-results q:before, #webkite-results q:after {
+    content: '';
+    content: none; }
+  #webkite-results table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+/****************************************** BEGIN STYLES */
+#webkite-results {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 20px 10px 20px;
+  font: 400 14px/normal "Oswald", sans-serif;
+  color: rgba(0, 0, 0, 0.7); }
+  #webkite-results a {
+    color: #1b9cd2;
+    text-decoration: none; }
+    #webkite-results a:hover {
+      color: #0073a7; }
+  #webkite-results.webkite-fade-out img {
+    opacity: 0.5; }
+
+/* TYPOGRAPHY */
+#webkite-results h1, #webkite-results h2 {
+  margin: 0; }
+#webkite-results h2 {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  display: inline-block;
+  font: 700 1.5em/1 "Open Sans";
+  color: rgba(0, 0, 0, 0.7); }
+#webkite-results p, #webkite-results li {
+  color: rgba(0, 0, 0, 0.7); }
+
+/******************************************** SORT/FILTER AREA */
+#webkite-results .webkite-results-header {
+  text-align: justify;
+  position: relative; }
+  #webkite-results .webkite-results-header .webkite-sort-area, #webkite-results .webkite-results-header .webkite-filter-area {
+    display: inline-block;
+    vertical-align: top; }
+  #webkite-results .webkite-results-header .webkite-menu ul {
+    width: 150px;
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: auto; }
+    #webkite-results .webkite-results-header .webkite-menu ul li a {
+      line-height: 1;
+      padding: 3px 10px; }
+#webkite-results .webkite-results-header {
+  line-height: 1;
+  margin-bottom: 20px; }
+  #webkite-results .webkite-results-header::after {
+    content: '';
+    clear: both;
+    display: table; }
+
+/************************************************* SORTS */
+#webkite-results .webkite-sort-area > .webkite-toggle {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font: 700 14px/1.3 'Open Sans', 'Arial', sans-serif;
+  margin: 0;
+  outline: none;
+  padding: 3px 8px 3px 8px;
+  height: 28px;
+  text-align: left; }
+  #webkite-results .webkite-sort-area > .webkite-toggle i {
+    background: url("angle-light.png") center center no-repeat;
+    display: inline-block;
+    height: 10px;
+    margin-left: 10px;
+    pointer-events: none;
+    width: 10px; }
+#webkite-results .webkite-sort-area {
+  width: 68px;
+  position: relative;
+  z-index: 3;
+  font-family: 'Open Sans', 'Arial', sans-serif; }
+
+/********************************************* SORT MENU */
+#webkite-results {
+  /* directional arrow */ }
+  #webkite-results .sort-menu {
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-padding-start: 0;
+    -moz-padding-start: 0;
+    background: white;
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 10px 0;
+    position: absolute;
+    z-index: 4;
+    top: 10px;
+    left: 10px; }
+  #webkite-results .sort-menu li {
+    list-style-type: none;
+    position: relative;
+    padding-bottom: 0; }
+  #webkite-results .sort-menu li a {
+    display: block;
+    padding: 2px 10px;
+    white-space: pre; }
+    #webkite-results .sort-menu li a:hover {
+      background: #1b9cd2;
+      color: white; }
+  #webkite-results .sort-menu li.active a {
+    position: relative;
+    padding-right: 30px; }
+    #webkite-results .sort-menu li.active a.asc::after, #webkite-results .sort-menu li.active a.desc::after {
+      background: url("sort-direction.png") no-repeat;
+      content: "";
+      display: block;
+      height: 5px;
+      width: 10px;
+      position: absolute;
+      top: 8px;
+      right: 10px; }
+    #webkite-results .sort-menu li.active a.asc::after {
+      background-position: 0 0; }
+    #webkite-results .sort-menu li.active a.desc::after {
+      background-position: 0 -5px; }
+
+/************************************************ FILTERS */
+#webkite-results {
+  /* tokens */
+  /* clear everything */ }
+  #webkite-results .webkite-filter-area {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative; }
+  #webkite-results .webkite-sort-area + .webkite-filter-area {
+    padding-left: 78px;
+    margin-left: -68px; }
+  #webkite-results .webkite-applied-filters {
+    position: relative; }
+  #webkite-results .current-filters {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    height: 28px;
+    padding: 5px 25px 5px 72px;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    /* and & or */ }
+    #webkite-results .current-filters span {
+      color: rgba(0, 0, 0, 0.4);
+      font-size: 14px;
+      line-height: 1.2em;
+      padding: 0 0.41667em 0 0;
+      vertical-align: top; }
+  #webkite-results .webkite-applied-filters > .webkite-toggle {
+    background: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    outline: none;
+    z-index: 2;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-right-color: rgba(0, 0, 0, 0.1);
+    background-clip: padding-box;
+    color: rgba(0, 0, 0, 0.4);
+    font: 700 14px/1 'Open Sans', 'Arial', sans-serif;
+    padding: 0 8px;
+    height: 28px;
+    width: 73px;
+    white-space: nowrap;
+    text-align: left; }
+    #webkite-results .webkite-applied-filters > .webkite-toggle i {
+      background: url("plus-light.png") no-repeat;
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      margin-left: 8px;
+      pointer-events: none;
+      position: relative;
+      top: 1px; }
+  #webkite-results .filter-token-wrapper {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; }
+    #webkite-results .filter-token-wrapper > span:first-child {
+      padding-left: 0.41667em; }
+  #webkite-results a.webkite-remove-filter {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    color: white;
+    font-size: 14px;
+    line-height: 1;
+    max-width: 100px;
+    padding: 0.0625em 0.3125em;
+    text-align: left;
+    word-wrap: normal;
+    margin-right: 0.41667em; }
+    #webkite-results a.webkite-remove-filter:hover {
+      text-decoration: line-through; }
+  #webkite-results [class^="filter-group"] {
+    display: inline-block; }
+  #webkite-results .filter-group-0 a.webkite-remove-filter {
+    background: #1b9cd2; }
+  #webkite-results .filter-group-1 a.webkite-remove-filter {
+    background: #39a17c; }
+  #webkite-results .filter-group-2 a.webkite-remove-filter {
+    background: #a8936f; }
+  #webkite-results .filter-group-3 a.webkite-remove-filter {
+    background: #e6af52; }
+  #webkite-results .filter-group-4 a.webkite-remove-filter {
+    background: #6f7ca8; }
+  #webkite-results a.webkite-clear-filters {
+    background: url("clear-all-icon.png") center top no-repeat;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    right: 4px;
+    top: 4px; }
+    #webkite-results a.webkite-clear-filters:active {
+      background-position: 0 -18px; }
+
+/**************************************** FILTER DROPDOWN */
+#webkite-results .filter-menu {
+  margin: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  background: white;
+  font-size: 14px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  left: 10px; }
+#webkite-results .filter-menu li {
+  list-style-type: none;
+  position: relative;
+  padding-bottom: 0; }
+#webkite-results .filter-menu li .webkite-link, #webkite-results .filter-menu li a {
+  color: #1b9cd2;
+  display: block;
+  padding: 2.5px 10px; }
+  #webkite-results .filter-menu li .webkite-link:hover, #webkite-results .filter-menu li a:hover {
+    background: #1b9cd2;
+    color: white; }
+#webkite-results .filter-menu > li > .webkite-link {
+  color: #1b9cd2;
+  cursor: pointer;
+  padding-right: 20px;
+  position: relative; }
+  #webkite-results .filter-menu > li > .webkite-link::after {
+    color: rgba(0, 0, 0, 0.4);
+    content: "\203A";
+    opacity: 0.5;
+    position: absolute;
+    right: 6.66667px; }
+#webkite-results .filter-menu-child {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  display: none;
+  position: absolute;
+  background: white;
+  padding: 10px 0;
+  left: 100%;
+  top: -10px;
+  margin: 0; }
+#webkite-results .filter-menu li:hover .filter-menu-child {
+  display: block; }
+
+/******************************* FILTER OVERVIEW AND SHADE */
+#webkite-results .filter-token-wrapper.webkite-truncated:before {
+  content: "";
+  background: url("gradient-fallback-light.png") repeat-y;
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.02) 75%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(5%, rgba(0, 0, 0, 0.3)), color-stop(25%, rgba(0, 0, 0, 0.15)), color-stop(75%, rgba(0, 0, 0, 0.02)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.02) 75%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.02) 75%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.02) 75%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.02) 75%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=1 );
+  height: auto;
+  width: 1.5em;
+  position: absolute;
+  left: 71px;
+  top: -1px;
+  bottom: -1px; }
+#webkite-results .all-current-filters {
+  -webkit-border-radius: 0 3px 3px 3px;
+  -moz-border-radius: 0 3px 3px 3px;
+  -ms-border-radius: 0 3px 3px 3px;
+  -o-border-radius: 0 3px 3px 3px;
+  border-radius: 0 3px 3px 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 19px;
+  padding: 5px 25px 2px 5px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  left: 71px;
+  z-index: 3; }
+  #webkite-results .all-current-filters .all-filters-wrapper {
+    white-space: normal; }
+    #webkite-results .all-current-filters .all-filters-wrapper > span:first-child {
+      padding-left: 0; }
+    #webkite-results .all-current-filters .all-filters-wrapper [class^="filter-group"] {
+      display: inline; }
+
+/************************************** ELEMENT QUERIES */
+#webkite-results.xs .webkite-filter-area, #webkite-results.xs .webkite-sort-area, #webkite-results.xs .webkite-sort-area > .webkite-toggle {
+  width: 100%; }
+#webkite-results.xs .webkite-sort-area > .webkite-toggle i {
+  float: right;
+  margin-top: 5px; }
+#webkite-results.xs .sort-menu {
+  width: 95%; }
+#webkite-results.xs .webkite-sort-area + .webkite-filter-area {
+  margin-top: 20px; }
+#webkite-results.xs .webkite-filter-area, #webkite-results.xs .webkite-sort-area + .webkite-filter-area {
+  margin-left: 0;
+  padding-left: 0; }
+
+
+/********************************************** BLOCKS */
+#webkite-results .webkite-block-group {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: -20px;
+  vertical-align: top;
+  text-align: left;
+  position: relative; }
+#webkite-results .webkite-block {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 20px;
+  width: 100%; }
+  #webkite-results .webkite-block.webkite-block-eighteen {
+    width: 18%; }
+  #webkite-results .webkite-block.webkite-block-twenty {
+    width: 20%; }
+  #webkite-results .webkite-block.webkite-block-twentytwo {
+    width: 22%; }
+  #webkite-results .webkite-block.webkite-block-thirty {
+    width: 30%; }
+  #webkite-results .webkite-block.webkite-block-forty {
+    width: 40%; }
+  #webkite-results .webkite-block.webkite-block-fifty {
+    width: 50%; }
+  #webkite-results .webkite-block.webkite-block-sixty {
+    width: 60%; }
+  #webkite-results .webkite-block.webkite-block-seventy {
+    width: 70%; }
+
+/********************************************** GENERAL */
+#webkite-results .webkite-world-cup-current {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.7);
+  min-height: 34px;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative; }
+#webkite-results .webkite-results-footer {
+  font-size: 14px;
+  position: relative;
+  min-height: 34px;
+  text-align: center; }
+  #webkite-results .webkite-results-footer .webkite-branding-area a {
+    background: url("branding-light.svg") center top no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 34px;
+    width: 102px;
+    margin: 0 auto; }
+#webkite-results .webkite-hide {
+  display: none; }
+#webkite-results .webkite-show {
+  display: block; }
+
+/********************* CURRENT */
+#webkite-results .webkite-world-cup-current {
+  height: 80px;
+  position: relative; }
+  #webkite-results .webkite-world-cup-current .webkite-current-status {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.2);
+    line-height: 76px;
+    width: 60px;
+    top: 0;
+    left: 50%;
+    margin-left: -30px;
+    text-align: center; }
+    #webkite-results .webkite-world-cup-current .webkite-current-status > span {
+      line-height: 18px;
+      font-size: 14px;
+      display: inline-block;
+      vertical-align: middle; }
+  #webkite-results .webkite-world-cup-current .webkite-block-group {
+    margin-left: 0;
+    overflow: hidden; }
+  #webkite-results .webkite-world-cup-current .webkite-block {
+    padding-left: 0; }
+  #webkite-results .webkite-world-cup-current h3 {
+    display: block;
+    line-height: 80px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    color: rgba(0, 0, 0, 0.9); }
+  #webkite-results .webkite-world-cup-current .webkite-current-team {
+    font-size: 24px;
+    display: block;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative; }
+  #webkite-results .webkite-world-cup-current .webkite-current-score {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: #1b9cd2;
+    font-size: 36px;
+    vertical-align: middle;
+    padding: 0 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px; }
+  #webkite-results .webkite-world-cup-current .webkite-current-home {
+    text-align: right;
+    padding-right: 25px; }
+    #webkite-results .webkite-world-cup-current .webkite-current-home:before {
+      content: '';
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      height: 80px;
+      width: 290px;
+      left: -145px;
+      top: 50%;
+      margin-top: -40px;
+      position: absolute; }
+    #webkite-results .webkite-world-cup-current .webkite-current-home h3 {
+      padding-left: 65px;
+      padding-right: 50px; }
+  #webkite-results .webkite-world-cup-current .webkite-current-away {
+    text-align: left;
+    padding-left: 25px;
+    position: relative; }
+    #webkite-results .webkite-world-cup-current .webkite-current-away:before {
+      content: '';
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      height: 80px;
+      width: 290px;
+      right: -145px;
+      top: 50%;
+      margin-top: -40px;
+      position: absolute; }
+    #webkite-results .webkite-world-cup-current .webkite-current-away h3 {
+      padding-right: 65px;
+      padding-left: 50px; }
+    #webkite-results .webkite-world-cup-current .webkite-current-away .webkite-current-score {
+      left: 0;
+      right: auto; }
+
+/************************************ RESULTS */
+#webkite-results .webkite-results-wrapper {
+  margin-bottom: 10px;
+  max-height: 235px;
+  overflow: hidden;
+  overflow-y: auto; }
+  #webkite-results .webkite-results-wrapper > .webkite-block-group {
+    margin-left: -10px;
+    margin-top: -5px; }
+#webkite-results .webkite-result {
+  height: 55px;
+  padding-left: 10px;
+  margin-top: 5px;
+  line-height: 20px; }
+  #webkite-results .webkite-result .webkite-block-group {
+    height: 100%;
+    margin-left: -1px; }
+    #webkite-results .webkite-result .webkite-block-group > .webkite-block {
+      height: 100%;
+      padding-left: 1px; }
+      #webkite-results .webkite-result .webkite-block-group > .webkite-block > div {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.03);
+        padding: 8px 10px; }
+  #webkite-results .webkite-result .webkite-block-eighteen, #webkite-results .webkite-result .webkite-block-twentytwo {
+    font-size: 12px;
+    text-align: center;
+    position: relative; }
+  #webkite-results .webkite-result .webkite-block-sixty ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #webkite-results .webkite-result .webkite-block-sixty ul li {
+      margin: 0;
+      padding: 0 20px 0 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative; }
+      #webkite-results .webkite-result .webkite-block-sixty ul li .webkite-team-score {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 6px; }
+
+/****** IMAGES */
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Algeria:before {
+  background-image: url("current-Algeria.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Argentina:before {
+  background-image: url("current-Argentina.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Belgium:before {
+  background-image: url("current-Belgium.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Brazil:before {
+  background-image: url("current-Brazil.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Chile:before {
+  background-image: url("current-Chile.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Colombia:before {
+  background-image: url("current-Colombia.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Costa-Rica:before {
+  background-image: url("current-Costa-Rica.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-France:before {
+  background-image: url("current-France.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Germany:before {
+  background-image: url("current-Germany.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Greece:before {
+  background-image: url("current-Greece.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Mexico:before {
+  background-image: url("current-Mexico.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Netherlands:before {
+  background-image: url("current-Netherlands.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Nigeria:before {
+  background-image: url("current-Nigeria.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Switzerland:before {
+  background-image: url("current-Switzerland.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-United-States:before {
+  background-image: url("current-United-States.png"); }
+#webkite-results .webkite-world-cup-current .webkite-block-fifty.webkite-Uruguay:before {
+  background-image: url("current-Uruguay.png"); }
+
+/******** TIMERS */
+#webkite-results .webkite-time-wrapper {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px; }
+#webkite-results .webkite-world-cup-current .webkite-current-status.webkite-time-wrapper {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px; }
+#webkite-results .webkite-time-circle {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 2px solid rgba(0, 0, 0, 0.1); }
+  #webkite-results .webkite-time-circle .webkite-time-mask {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 42px;
+    -moz-border-radius: 42px;
+    -ms-border-radius: 42px;
+    -o-border-radius: 42px;
+    border-radius: 42px;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    clip: rect(0px, 42px, 42px, 21px); }
+    #webkite-results .webkite-time-circle .webkite-time-mask .webkite-time-fill {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-border-radius: 42px;
+      -moz-border-radius: 42px;
+      -ms-border-radius: 42px;
+      -o-border-radius: 42px;
+      border-radius: 42px;
+      position: absolute;
+      height: 42px;
+      width: 42px;
+      top: 0;
+      left: 0;
+      border: 4px solid #83c852;
+      clip: rect(0px, 21px, 42px, 0px); }
+    #webkite-results .webkite-time-circle .webkite-time-mask.webkite-mask-full {
+      clip: rect(0px, 21px, 42px, 0px); }
+      #webkite-results .webkite-time-circle .webkite-time-mask.webkite-mask-full .webkite-time-fill {
+        clip: rect(0px, 42px, 42px, 21px); }
+  #webkite-results .webkite-time-circle.webkite-time .webkite-time-mask .webkite-time-fill {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  #webkite-results .webkite-time-circle.webkite-time .webkite-time-mask.webkite-mask-full .webkite-time-fill {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  #webkite-results .webkite-time-circle .webkite-time-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.9); }
+
+/***** TIMER ROTATIONS */
+#webkite-results .webkite-time-circle.webkite-time-1 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg); }
+#webkite-results .webkite-time-circle.webkite-time-1 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-2 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg); }
+#webkite-results .webkite-time-circle.webkite-time-2 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-3 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+  transform: rotate(12deg); }
+#webkite-results .webkite-time-circle.webkite-time-3 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-4 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(16deg);
+  -webkit-transform: rotate(16deg);
+  -o-transform: rotate(16deg);
+  -ms-transform: rotate(16deg);
+  transform: rotate(16deg); }
+#webkite-results .webkite-time-circle.webkite-time-4 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-5 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg); }
+#webkite-results .webkite-time-circle.webkite-time-5 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-6 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(24deg);
+  -webkit-transform: rotate(24deg);
+  -o-transform: rotate(24deg);
+  -ms-transform: rotate(24deg);
+  transform: rotate(24deg); }
+#webkite-results .webkite-time-circle.webkite-time-6 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-7 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(28deg);
+  -webkit-transform: rotate(28deg);
+  -o-transform: rotate(28deg);
+  -ms-transform: rotate(28deg);
+  transform: rotate(28deg); }
+#webkite-results .webkite-time-circle.webkite-time-7 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-8 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(32deg);
+  -webkit-transform: rotate(32deg);
+  -o-transform: rotate(32deg);
+  -ms-transform: rotate(32deg);
+  transform: rotate(32deg); }
+#webkite-results .webkite-time-circle.webkite-time-8 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-9 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(36deg);
+  -webkit-transform: rotate(36deg);
+  -o-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  transform: rotate(36deg); }
+#webkite-results .webkite-time-circle.webkite-time-9 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-10 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg); }
+#webkite-results .webkite-time-circle.webkite-time-10 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-11 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(44deg);
+  -webkit-transform: rotate(44deg);
+  -o-transform: rotate(44deg);
+  -ms-transform: rotate(44deg);
+  transform: rotate(44deg); }
+#webkite-results .webkite-time-circle.webkite-time-11 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-12 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(48deg);
+  -webkit-transform: rotate(48deg);
+  -o-transform: rotate(48deg);
+  -ms-transform: rotate(48deg);
+  transform: rotate(48deg); }
+#webkite-results .webkite-time-circle.webkite-time-12 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-13 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(52deg);
+  -webkit-transform: rotate(52deg);
+  -o-transform: rotate(52deg);
+  -ms-transform: rotate(52deg);
+  transform: rotate(52deg); }
+#webkite-results .webkite-time-circle.webkite-time-13 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-14 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(56deg);
+  -webkit-transform: rotate(56deg);
+  -o-transform: rotate(56deg);
+  -ms-transform: rotate(56deg);
+  transform: rotate(56deg); }
+#webkite-results .webkite-time-circle.webkite-time-14 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-15 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg); }
+#webkite-results .webkite-time-circle.webkite-time-15 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-16 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(64deg);
+  -webkit-transform: rotate(64deg);
+  -o-transform: rotate(64deg);
+  -ms-transform: rotate(64deg);
+  transform: rotate(64deg); }
+#webkite-results .webkite-time-circle.webkite-time-16 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-17 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(68deg);
+  -webkit-transform: rotate(68deg);
+  -o-transform: rotate(68deg);
+  -ms-transform: rotate(68deg);
+  transform: rotate(68deg); }
+#webkite-results .webkite-time-circle.webkite-time-17 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-18 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(72deg);
+  -webkit-transform: rotate(72deg);
+  -o-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  transform: rotate(72deg); }
+#webkite-results .webkite-time-circle.webkite-time-18 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-19 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(76deg);
+  -webkit-transform: rotate(76deg);
+  -o-transform: rotate(76deg);
+  -ms-transform: rotate(76deg);
+  transform: rotate(76deg); }
+#webkite-results .webkite-time-circle.webkite-time-19 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-20 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(80deg);
+  -webkit-transform: rotate(80deg);
+  -o-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg); }
+#webkite-results .webkite-time-circle.webkite-time-20 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-21 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(84deg);
+  -webkit-transform: rotate(84deg);
+  -o-transform: rotate(84deg);
+  -ms-transform: rotate(84deg);
+  transform: rotate(84deg); }
+#webkite-results .webkite-time-circle.webkite-time-21 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-22 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(88deg);
+  -webkit-transform: rotate(88deg);
+  -o-transform: rotate(88deg);
+  -ms-transform: rotate(88deg);
+  transform: rotate(88deg); }
+#webkite-results .webkite-time-circle.webkite-time-22 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-23 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(92deg);
+  -webkit-transform: rotate(92deg);
+  -o-transform: rotate(92deg);
+  -ms-transform: rotate(92deg);
+  transform: rotate(92deg); }
+#webkite-results .webkite-time-circle.webkite-time-23 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-24 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(96deg);
+  -webkit-transform: rotate(96deg);
+  -o-transform: rotate(96deg);
+  -ms-transform: rotate(96deg);
+  transform: rotate(96deg); }
+#webkite-results .webkite-time-circle.webkite-time-24 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-25 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(100deg);
+  -webkit-transform: rotate(100deg);
+  -o-transform: rotate(100deg);
+  -ms-transform: rotate(100deg);
+  transform: rotate(100deg); }
+#webkite-results .webkite-time-circle.webkite-time-25 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-26 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(104deg);
+  -webkit-transform: rotate(104deg);
+  -o-transform: rotate(104deg);
+  -ms-transform: rotate(104deg);
+  transform: rotate(104deg); }
+#webkite-results .webkite-time-circle.webkite-time-26 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-27 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(108deg);
+  -webkit-transform: rotate(108deg);
+  -o-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  transform: rotate(108deg); }
+#webkite-results .webkite-time-circle.webkite-time-27 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-28 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(112deg);
+  -webkit-transform: rotate(112deg);
+  -o-transform: rotate(112deg);
+  -ms-transform: rotate(112deg);
+  transform: rotate(112deg); }
+#webkite-results .webkite-time-circle.webkite-time-28 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-29 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(116deg);
+  -webkit-transform: rotate(116deg);
+  -o-transform: rotate(116deg);
+  -ms-transform: rotate(116deg);
+  transform: rotate(116deg); }
+#webkite-results .webkite-time-circle.webkite-time-29 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-30 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg); }
+#webkite-results .webkite-time-circle.webkite-time-30 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-31 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(124deg);
+  -webkit-transform: rotate(124deg);
+  -o-transform: rotate(124deg);
+  -ms-transform: rotate(124deg);
+  transform: rotate(124deg); }
+#webkite-results .webkite-time-circle.webkite-time-31 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-32 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(128deg);
+  -webkit-transform: rotate(128deg);
+  -o-transform: rotate(128deg);
+  -ms-transform: rotate(128deg);
+  transform: rotate(128deg); }
+#webkite-results .webkite-time-circle.webkite-time-32 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-33 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(132deg);
+  -webkit-transform: rotate(132deg);
+  -o-transform: rotate(132deg);
+  -ms-transform: rotate(132deg);
+  transform: rotate(132deg); }
+#webkite-results .webkite-time-circle.webkite-time-33 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-34 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(136deg);
+  -webkit-transform: rotate(136deg);
+  -o-transform: rotate(136deg);
+  -ms-transform: rotate(136deg);
+  transform: rotate(136deg); }
+#webkite-results .webkite-time-circle.webkite-time-34 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-35 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(140deg);
+  -webkit-transform: rotate(140deg);
+  -o-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg); }
+#webkite-results .webkite-time-circle.webkite-time-35 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-36 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(144deg);
+  -webkit-transform: rotate(144deg);
+  -o-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  transform: rotate(144deg); }
+#webkite-results .webkite-time-circle.webkite-time-36 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-37 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(148deg);
+  -webkit-transform: rotate(148deg);
+  -o-transform: rotate(148deg);
+  -ms-transform: rotate(148deg);
+  transform: rotate(148deg); }
+#webkite-results .webkite-time-circle.webkite-time-37 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-38 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(152deg);
+  -webkit-transform: rotate(152deg);
+  -o-transform: rotate(152deg);
+  -ms-transform: rotate(152deg);
+  transform: rotate(152deg); }
+#webkite-results .webkite-time-circle.webkite-time-38 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-39 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(156deg);
+  -webkit-transform: rotate(156deg);
+  -o-transform: rotate(156deg);
+  -ms-transform: rotate(156deg);
+  transform: rotate(156deg); }
+#webkite-results .webkite-time-circle.webkite-time-39 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-40 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(160deg);
+  -webkit-transform: rotate(160deg);
+  -o-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  transform: rotate(160deg); }
+#webkite-results .webkite-time-circle.webkite-time-40 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-41 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(164deg);
+  -webkit-transform: rotate(164deg);
+  -o-transform: rotate(164deg);
+  -ms-transform: rotate(164deg);
+  transform: rotate(164deg); }
+#webkite-results .webkite-time-circle.webkite-time-41 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-42 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(168deg);
+  -webkit-transform: rotate(168deg);
+  -o-transform: rotate(168deg);
+  -ms-transform: rotate(168deg);
+  transform: rotate(168deg); }
+#webkite-results .webkite-time-circle.webkite-time-42 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-43 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(172deg);
+  -webkit-transform: rotate(172deg);
+  -o-transform: rotate(172deg);
+  -ms-transform: rotate(172deg);
+  transform: rotate(172deg); }
+#webkite-results .webkite-time-circle.webkite-time-43 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-44 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(176deg);
+  -webkit-transform: rotate(176deg);
+  -o-transform: rotate(176deg);
+  -ms-transform: rotate(176deg);
+  transform: rotate(176deg); }
+#webkite-results .webkite-time-circle.webkite-time-44 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-45 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-45 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+#webkite-results .webkite-time-circle.webkite-time-46 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-46 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg); }
+#webkite-results .webkite-time-circle.webkite-time-47 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-47 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg); }
+#webkite-results .webkite-time-circle.webkite-time-48 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-48 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+  transform: rotate(12deg); }
+#webkite-results .webkite-time-circle.webkite-time-49 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-49 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(16deg);
+  -webkit-transform: rotate(16deg);
+  -o-transform: rotate(16deg);
+  -ms-transform: rotate(16deg);
+  transform: rotate(16deg); }
+#webkite-results .webkite-time-circle.webkite-time-50 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-50 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg); }
+#webkite-results .webkite-time-circle.webkite-time-51 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-51 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(24deg);
+  -webkit-transform: rotate(24deg);
+  -o-transform: rotate(24deg);
+  -ms-transform: rotate(24deg);
+  transform: rotate(24deg); }
+#webkite-results .webkite-time-circle.webkite-time-52 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-52 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(28deg);
+  -webkit-transform: rotate(28deg);
+  -o-transform: rotate(28deg);
+  -ms-transform: rotate(28deg);
+  transform: rotate(28deg); }
+#webkite-results .webkite-time-circle.webkite-time-53 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-53 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(32deg);
+  -webkit-transform: rotate(32deg);
+  -o-transform: rotate(32deg);
+  -ms-transform: rotate(32deg);
+  transform: rotate(32deg); }
+#webkite-results .webkite-time-circle.webkite-time-54 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-54 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(36deg);
+  -webkit-transform: rotate(36deg);
+  -o-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  transform: rotate(36deg); }
+#webkite-results .webkite-time-circle.webkite-time-55 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-55 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg); }
+#webkite-results .webkite-time-circle.webkite-time-56 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-56 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(44deg);
+  -webkit-transform: rotate(44deg);
+  -o-transform: rotate(44deg);
+  -ms-transform: rotate(44deg);
+  transform: rotate(44deg); }
+#webkite-results .webkite-time-circle.webkite-time-57 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-57 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(48deg);
+  -webkit-transform: rotate(48deg);
+  -o-transform: rotate(48deg);
+  -ms-transform: rotate(48deg);
+  transform: rotate(48deg); }
+#webkite-results .webkite-time-circle.webkite-time-58 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-58 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(52deg);
+  -webkit-transform: rotate(52deg);
+  -o-transform: rotate(52deg);
+  -ms-transform: rotate(52deg);
+  transform: rotate(52deg); }
+#webkite-results .webkite-time-circle.webkite-time-59 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-59 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(56deg);
+  -webkit-transform: rotate(56deg);
+  -o-transform: rotate(56deg);
+  -ms-transform: rotate(56deg);
+  transform: rotate(56deg); }
+#webkite-results .webkite-time-circle.webkite-time-60 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-60 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg); }
+#webkite-results .webkite-time-circle.webkite-time-61 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-61 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(64deg);
+  -webkit-transform: rotate(64deg);
+  -o-transform: rotate(64deg);
+  -ms-transform: rotate(64deg);
+  transform: rotate(64deg); }
+#webkite-results .webkite-time-circle.webkite-time-62 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-62 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(68deg);
+  -webkit-transform: rotate(68deg);
+  -o-transform: rotate(68deg);
+  -ms-transform: rotate(68deg);
+  transform: rotate(68deg); }
+#webkite-results .webkite-time-circle.webkite-time-63 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-63 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(72deg);
+  -webkit-transform: rotate(72deg);
+  -o-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  transform: rotate(72deg); }
+#webkite-results .webkite-time-circle.webkite-time-64 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-64 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(76deg);
+  -webkit-transform: rotate(76deg);
+  -o-transform: rotate(76deg);
+  -ms-transform: rotate(76deg);
+  transform: rotate(76deg); }
+#webkite-results .webkite-time-circle.webkite-time-65 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-65 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(80deg);
+  -webkit-transform: rotate(80deg);
+  -o-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg); }
+#webkite-results .webkite-time-circle.webkite-time-66 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-66 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(84deg);
+  -webkit-transform: rotate(84deg);
+  -o-transform: rotate(84deg);
+  -ms-transform: rotate(84deg);
+  transform: rotate(84deg); }
+#webkite-results .webkite-time-circle.webkite-time-67 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-67 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(88deg);
+  -webkit-transform: rotate(88deg);
+  -o-transform: rotate(88deg);
+  -ms-transform: rotate(88deg);
+  transform: rotate(88deg); }
+#webkite-results .webkite-time-circle.webkite-time-68 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-68 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(92deg);
+  -webkit-transform: rotate(92deg);
+  -o-transform: rotate(92deg);
+  -ms-transform: rotate(92deg);
+  transform: rotate(92deg); }
+#webkite-results .webkite-time-circle.webkite-time-69 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-69 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(96deg);
+  -webkit-transform: rotate(96deg);
+  -o-transform: rotate(96deg);
+  -ms-transform: rotate(96deg);
+  transform: rotate(96deg); }
+#webkite-results .webkite-time-circle.webkite-time-70 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-70 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(100deg);
+  -webkit-transform: rotate(100deg);
+  -o-transform: rotate(100deg);
+  -ms-transform: rotate(100deg);
+  transform: rotate(100deg); }
+#webkite-results .webkite-time-circle.webkite-time-71 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-71 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(104deg);
+  -webkit-transform: rotate(104deg);
+  -o-transform: rotate(104deg);
+  -ms-transform: rotate(104deg);
+  transform: rotate(104deg); }
+#webkite-results .webkite-time-circle.webkite-time-72 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-72 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(108deg);
+  -webkit-transform: rotate(108deg);
+  -o-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  transform: rotate(108deg); }
+#webkite-results .webkite-time-circle.webkite-time-73 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-73 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(112deg);
+  -webkit-transform: rotate(112deg);
+  -o-transform: rotate(112deg);
+  -ms-transform: rotate(112deg);
+  transform: rotate(112deg); }
+#webkite-results .webkite-time-circle.webkite-time-74 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-74 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(116deg);
+  -webkit-transform: rotate(116deg);
+  -o-transform: rotate(116deg);
+  -ms-transform: rotate(116deg);
+  transform: rotate(116deg); }
+#webkite-results .webkite-time-circle.webkite-time-75 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-75 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg); }
+#webkite-results .webkite-time-circle.webkite-time-76 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-76 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(124deg);
+  -webkit-transform: rotate(124deg);
+  -o-transform: rotate(124deg);
+  -ms-transform: rotate(124deg);
+  transform: rotate(124deg); }
+#webkite-results .webkite-time-circle.webkite-time-77 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-77 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(128deg);
+  -webkit-transform: rotate(128deg);
+  -o-transform: rotate(128deg);
+  -ms-transform: rotate(128deg);
+  transform: rotate(128deg); }
+#webkite-results .webkite-time-circle.webkite-time-78 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-78 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(132deg);
+  -webkit-transform: rotate(132deg);
+  -o-transform: rotate(132deg);
+  -ms-transform: rotate(132deg);
+  transform: rotate(132deg); }
+#webkite-results .webkite-time-circle.webkite-time-79 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-79 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(136deg);
+  -webkit-transform: rotate(136deg);
+  -o-transform: rotate(136deg);
+  -ms-transform: rotate(136deg);
+  transform: rotate(136deg); }
+#webkite-results .webkite-time-circle.webkite-time-80 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-80 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(140deg);
+  -webkit-transform: rotate(140deg);
+  -o-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg); }
+#webkite-results .webkite-time-circle.webkite-time-81 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-81 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(144deg);
+  -webkit-transform: rotate(144deg);
+  -o-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  transform: rotate(144deg); }
+#webkite-results .webkite-time-circle.webkite-time-82 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-82 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(148deg);
+  -webkit-transform: rotate(148deg);
+  -o-transform: rotate(148deg);
+  -ms-transform: rotate(148deg);
+  transform: rotate(148deg); }
+#webkite-results .webkite-time-circle.webkite-time-83 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-83 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(152deg);
+  -webkit-transform: rotate(152deg);
+  -o-transform: rotate(152deg);
+  -ms-transform: rotate(152deg);
+  transform: rotate(152deg); }
+#webkite-results .webkite-time-circle.webkite-time-84 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-84 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(156deg);
+  -webkit-transform: rotate(156deg);
+  -o-transform: rotate(156deg);
+  -ms-transform: rotate(156deg);
+  transform: rotate(156deg); }
+#webkite-results .webkite-time-circle.webkite-time-85 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-85 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(160deg);
+  -webkit-transform: rotate(160deg);
+  -o-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  transform: rotate(160deg); }
+#webkite-results .webkite-time-circle.webkite-time-86 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-86 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(164deg);
+  -webkit-transform: rotate(164deg);
+  -o-transform: rotate(164deg);
+  -ms-transform: rotate(164deg);
+  transform: rotate(164deg); }
+#webkite-results .webkite-time-circle.webkite-time-87 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-87 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(168deg);
+  -webkit-transform: rotate(168deg);
+  -o-transform: rotate(168deg);
+  -ms-transform: rotate(168deg);
+  transform: rotate(168deg); }
+#webkite-results .webkite-time-circle.webkite-time-88 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-88 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(172deg);
+  -webkit-transform: rotate(172deg);
+  -o-transform: rotate(172deg);
+  -ms-transform: rotate(172deg);
+  transform: rotate(172deg); }
+#webkite-results .webkite-time-circle.webkite-time-89 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-89 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(176deg);
+  -webkit-transform: rotate(176deg);
+  -o-transform: rotate(176deg);
+  -ms-transform: rotate(176deg);
+  transform: rotate(176deg); }
+#webkite-results .webkite-time-circle.webkite-time-90 .webkite-mask-half .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+#webkite-results .webkite-time-circle.webkite-time-90 .webkite-mask-full .webkite-time-fill {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+/******************************************* NO RESULTS */
+#webkite-results .webkite-no-results {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  #webkite-results .webkite-no-results h2 {
+    margin-bottom: 20px; }
+
+/************************************** ELEMENT QUERIES */
+#webkite-results.xs .webkite-world-cup-current {
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  #webkite-results.xs .webkite-world-cup-current .webkite-current-status {
+    line-height: 64px;
+    width: 70px;
+    top: 0;
+    left: auto;
+    right: 0;
+    margin-left: 0; }
+    #webkite-results.xs .webkite-world-cup-current .webkite-current-status > span {
+      line-height: 16px;
+      font-size: 13px; }
+    #webkite-results.xs .webkite-world-cup-current .webkite-current-status.webkite-time-wrapper {
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+      top: 50%;
+      left: auto;
+      right: 10px;
+      margin-top: -20px;
+      margin-left: 0; }
+  #webkite-results.xs .webkite-world-cup-current .webkite-block-fifty {
+    width: 100%; }
+  #webkite-results.xs .webkite-world-cup-current h3 {
+    line-height: 30px; }
+  #webkite-results.xs .webkite-world-cup-current .webkite-current-team {
+    font-size: 18px; }
+  #webkite-results.xs .webkite-world-cup-current .webkite-current-score {
+    font-size: 18px;
+    width: 35px; }
+  #webkite-results.xs .webkite-world-cup-current .webkite-current-home {
+    padding-right: 70px;
+    text-align: left; }
+    #webkite-results.xs .webkite-world-cup-current .webkite-current-home:before {
+      height: 25px;
+      width: 45px;
+      background-position: 0 0;
+      left: 10px;
+      top: 2px;
+      right: auto;
+      margin: 0;
+      background-size: 100%; }
+    #webkite-results.xs .webkite-world-cup-current .webkite-current-home h3 {
+      padding-left: 65px;
+      padding-right: 35px; }
+  #webkite-results.xs .webkite-world-cup-current .webkite-current-away {
+    padding-right: 70px;
+    padding-left: 0;
+    text-align: left; }
+    #webkite-results.xs .webkite-world-cup-current .webkite-current-away:before {
+      height: 25px;
+      width: 45px;
+      left: 10px;
+      top: 2px;
+      right: auto;
+      margin: 0;
+      background-position: 0 0;
+      background-size: 100%; }
+    #webkite-results.xs .webkite-world-cup-current .webkite-current-away h3 {
+      padding-left: 65px;
+      padding-right: 35px; }
+    #webkite-results.xs .webkite-world-cup-current .webkite-current-away .webkite-current-score {
+      left: auto;
+      right: 0; }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Algeria:before {
+  background-image: url("Algeria.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Argentina:before {
+  background-image: url("Argentina.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Belgium:before {
+  background-image: url("Belgium.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Brazil:before {
+  background-image: url("Brazil.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Chile:before {
+  background-image: url("Chile.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Colombia:before {
+  background-image: url("Colombia.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Costa-Rica:before {
+  background-image: url("Costa-Rica.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-France:before {
+  background-image: url("France.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Germany:before {
+  background-image: url("Germany.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Greece:before {
+  background-image: url("Greece.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Mexico:before {
+  background-image: url("Mexico.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Netherlands:before {
+  background-image: url("Netherlands.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Nigeria:before {
+  background-image: url("Nigeria.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Switzerland:before {
+  background-image: url("Switzerland.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-United-States:before {
+  background-image: url("United-States.png"); }
+#webkite-results.xs .webkite-world-cup-current .webkite-block-fifty.webkite-Uruguay:before {
+  background-image: url("Uruguay.png"); }
+#webkite-results.xs .webkite-result {
+  width: 100%; }
+  #webkite-results.xs .webkite-result .webkite-block-group > .webkite-block > div {
+    padding: 8px 10px; }
+
+#webkite-results.sm .webkite-world-cup-current {
+  height: 72px; }
+  #webkite-results.sm .webkite-world-cup-current .webkite-current-status {
+    line-height: 68px;
+    width: 50px;
+    top: 0;
+    left: 50%;
+    margin-left: -25px; }
+    #webkite-results.sm .webkite-world-cup-current .webkite-current-status > span {
+      line-height: 15px;
+      font-size: 12px; }
+    #webkite-results.sm .webkite-world-cup-current .webkite-current-status.webkite-time-wrapper {
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+      top: 50%;
+      left: 50%;
+      margin-top: -20px;
+      margin-left: -20px; }
+  #webkite-results.sm .webkite-world-cup-current h3 {
+    line-height: 72px; }
+  #webkite-results.sm .webkite-world-cup-current .webkite-current-team {
+    font-size: 22px; }
+  #webkite-results.sm .webkite-world-cup-current .webkite-current-score {
+    font-size: 30px;
+    width: 40px; }
+  #webkite-results.sm .webkite-world-cup-current .webkite-current-home {
+    padding-right: 20px; }
+    #webkite-results.sm .webkite-world-cup-current .webkite-current-home:before {
+      height: 72px;
+      left: -130px;
+      margin-top: -36px;
+      background-size: auto 72px; }
+    #webkite-results.sm .webkite-world-cup-current .webkite-current-home h3 {
+      padding-left: 55px;
+      padding-right: 40px; }
+  #webkite-results.sm .webkite-world-cup-current .webkite-current-away {
+    padding-left: 20px; }
+    #webkite-results.sm .webkite-world-cup-current .webkite-current-away:before {
+      height: 72px;
+      right: -160px;
+      margin-top: -36px;
+      background-size: auto 72px; }
+    #webkite-results.sm .webkite-world-cup-current .webkite-current-away h3 {
+      padding-right: 55px;
+      padding-left: 40px; }
+#webkite-results.sm .webkite-result .webkite-block-group > .webkite-block > div {
+  padding: 8px 6px; }
+#webkite-results.sm .webkite-result .webkite-block-sixty ul li {
+  padding-right: 15px;
+  font-size: 13px; }
+#webkite-results.sm .webkite-result .webkite-block.webkite-block-twentytwo {
+  width: 29%; }
+#webkite-results.sm .webkite-result .webkite-block.webkite-block-sixty {
+  width: 49%; }
+#webkite-results.sm .webkite-result .webkite-block.webkite-block-eighteen {
+  width: 22%; }

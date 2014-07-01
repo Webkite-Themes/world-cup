@@ -1,0 +1,120 @@
+{{log this}}
+{{>header}}
+
+{{#any (find facets sortable=true) (find facets filterable=true type="Enum")}}
+  <header class="webkite-results-header">
+    {{>sorts~}}
+    {{>filters}}
+  </header>
+{{/any}}
+
+<div class="webkite-results-wrapper">
+  {{#if items.length}}
+    <div class="webkite-block-group">
+      {{~#each this.items~}}
+        <div class="webkite-result webkite-block webkite-block-fifty">
+          <div class="webkite-block-group">
+            <div class="webkite-block webkite-block-twentytwo"><div>
+              {{#if (find facets name="Game Minute")}}
+                <div class="webkite-current-status webkite-time-wrapper">
+                  <div class="webkite-time-circle webkite-time{{#facet name="Game Minute"}}-{{displayValue}}{{/facet}}">
+                    <div class="webkite-time-mask webkite-mask-full">
+                      <div class="webkite-time-fill"></div>
+                    </div>
+                    <div class="webkite-time-mask webkite-mask-half">
+                      <div class="webkite-time-fill"></div>
+                      <div class="webkite-time-fill webkite-time-fix"></div>
+                    </div>
+                    <div class="webkite-time-number"><span>{{#facet name="Game Minute"}}{{displayValue}}{{/facet}}</span></div>
+                  </div>
+                </div>
+              {{else}}
+                {{#if (find facets name="Status" displayValue="Final")}}
+                  {{#facet name="Status"}}{{displayValue}}{{/facet}}
+                {{else}}
+                  {{#facet name="Start Time"}}{{displayValue}}{{/facet}}
+                {{/if}}
+              {{/if}}            
+            </div></div><!--
+         --><div class="webkite-block webkite-block-sixty"><div>
+              <ul>
+                <li>
+                  <span class="webkite-team-name">
+                    {{#facet name="Home Team"}}
+                      {{#if (find ../facets name="Teams" filterable=true)}}
+                        {{#each values}}<a href="#" class="webkite-add-filter" data-facet="Teams" data-operator="is" data-value="{{this}}">
+                          {{~#if (equals this "United States")~}}
+                            USA
+                          {{~else~}}
+                            {{this}}
+                          {{~/if~}}
+                        </a>{{/each}}
+                      {{else}}
+                        {{~#if (equals displayValue "United States")~}}
+                          USA
+                        {{~else~}}
+                          {{displayValue}}
+                        {{~/if~}}
+                      {{/if}}
+                    {{/facet}}
+                  </span>
+                  <span class="webkite-team-score">
+                    {{~#if (find facets name="Home Score")~}}
+                      {{~#facet name="Home Score"}}{{displayValue}}{{/facet~}}
+                    {{~else}}
+                      0
+                    {{~/if~}}
+                  </span>
+                </li>
+                <li>
+                  <span class="webkite-team-name">
+                    {{#facet name="Away Team"}}
+                      {{#if (find ../facets name="Teams" filterable=true)}}
+                        {{#each values}}<a href="#" class="webkite-add-filter" data-facet="Teams" data-operator="is" data-value="{{this}}">
+                          {{~#if (equals this "United States")~}}
+                            USA
+                          {{~else~}}
+                            {{this}}
+                          {{~/if~}}
+                        </a>{{/each}}
+                      {{else}}
+                        {{~#if (equals displayValue "United States")~}}
+                          USA
+                        {{~else~}}
+                          {{displayValue}}
+                        {{~/if~}}
+                      {{/if}}
+                    {{/facet}}
+                  </span>
+                  <span class="webkite-team-score">
+                    {{~#if (find facets name="Away Score")~}}
+                      {{~#facet name="Away Score"}}{{displayValue}}{{/facet~}}
+                    {{~else}}
+                      0
+                    {{~/if~}}
+                  </span>
+                </li>
+              </ul>
+            </div></div><!--
+         --><div class="webkite-block webkite-block-eighteen"><div>
+              <span class="webkite-match-round">
+                {{#facet name="Round"}}
+                  {{#if filterable}}
+                    {{#each values}}
+                      <a href="#" class="webkite-add-filter" data-facet="{{../name}}" data-operator="is" data-value="{{this}}">{{this}}</a>
+                    {{/each}}
+                  {{else}}
+                    {{displayValue}}                
+                  {{/if}}
+                {{/facet}}
+              </span>
+            </div></div>
+          </div>
+          
+        </div>
+      {{~/each~}}
+    </div>
+  {{/if}}
+</div>
+  
+{{>footer}}
