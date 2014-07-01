@@ -616,6 +616,13 @@
   max-height: 235px;
   overflow: hidden;
   overflow-y: auto; }
+  #webkite-results .webkite-results-wrapper::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px; }
+  #webkite-results .webkite-results-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
   #webkite-results .webkite-results-wrapper > .webkite-block-group {
     margin-left: -10px;
     margin-top: -5px; }
